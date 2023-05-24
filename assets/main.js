@@ -45,7 +45,7 @@ $(document).ready(function () {
     slidesPerView: "auto",
     centeredSlides: true,
     loop: true,
-    speed: 2500,
+    speed: 3500,
     autoplay: {
       delay: 10,
       disableOnInteraction: false,
