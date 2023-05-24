@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./assets/plagins/animate/animate.min.css" />
     <link
       rel="stylesheet"
+      href="./assets/plagins/scroll/jquery.scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
       href="./assets/plagins/modal/jquery.arcticmodal-0.3.css"
     />
     <link rel="stylesheet" href="./assets/styles/main.css" />
@@ -168,23 +172,6 @@
                 </div>
                 <div class="header__nav-item">
                   <a href="#" class="header__nav-item-title"> Контакты</a>
-                </div>
-                <div class="header__nav-item">
-                  <a href="#" class="header__nav-item-title">
-                    <span>Поиск</span>
-                    <svg
-                      class="search-icon"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.68571 3C11.4589 3 13.1594 3.70439 14.4132 4.9582C15.667 6.21202 16.3714 7.91255 16.3714 9.68571C16.3714 11.3417 15.7646 12.864 14.7669 14.0366L15.0446 14.3143H15.8571L21 19.4571L19.4571 21L14.3143 15.8571V15.0446L14.0366 14.7669C12.8234 15.8024 11.2807 16.3713 9.68571 16.3714C7.91255 16.3714 6.21202 15.667 4.9582 14.4132C3.70439 13.1594 3 11.4589 3 9.68571C3 7.91255 3.70439 6.21202 4.9582 4.9582C6.21202 3.70439 7.91255 3 9.68571 3ZM9.68571 5.05714C7.11429 5.05714 5.05714 7.11429 5.05714 9.68571C5.05714 12.2571 7.11429 14.3143 9.68571 14.3143C12.2571 14.3143 14.3143 12.2571 14.3143 9.68571C14.3143 7.11429 12.2571 5.05714 9.68571 5.05714Z"
-                      />
-                    </svg>
-                  </a>
                 </div>
                 <div class="mob-block">
                   <a href="tel:+74953748472" class="mob-block__tel">
@@ -859,7 +846,7 @@
           </div>
           <div class="map__items">
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--1 wow animate__animated animate__fadeInLeft"
               data-x="538"
               data-y="173"
               data-wow-duration=".5s"
@@ -868,7 +855,7 @@
               Норильск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--2 wow animate__animated animate__fadeInLeft"
               data-x="513"
               data-y="290"
               data-wow-duration=".5s"
@@ -877,7 +864,7 @@
               Нижневартовск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--3 wow animate__animated animate__fadeInLeft"
               data-x="172"
               data-y="323"
               data-wow-duration=".5s"
@@ -886,7 +873,7 @@
               Великие Луки
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--4 wow animate__animated animate__fadeInLeft"
               data-x="880"
               data-y="332"
               data-wow-duration=".5s"
@@ -895,7 +882,7 @@
               Якутск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--5 wow animate__animated animate__fadeInLeft"
               data-x="80"
               data-y="382"
               data-wow-duration=".5s"
@@ -904,7 +891,7 @@
               Калининград
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--6 wow animate__animated animate__fadeInLeft"
               data-x="266"
               data-y="354"
               data-wow-duration=".5s"
@@ -913,7 +900,7 @@
               Москва
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--7 wow animate__animated animate__fadeInLeft"
               data-x="626"
               data-y="382"
               data-wow-duration=".5s"
@@ -922,7 +909,7 @@
               Красноярск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--8 wow animate__animated animate__fadeInLeft"
               data-x="230"
               data-y="414"
               data-wow-duration=".5s"
@@ -931,7 +918,7 @@
               Курск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--9 wow animate__animated animate__fadeInLeft"
               data-x="334"
               data-y="400"
               data-wow-duration=".5s"
@@ -940,7 +927,7 @@
               Оренбург
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--10 wow animate__animated animate__fadeInLeft"
               data-x="557"
               data-y="414"
               data-wow-duration=".5s"
@@ -949,7 +936,7 @@
               Новосибирск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--11 wow animate__animated animate__fadeInLeft"
               data-x="755"
               data-y="459"
               data-wow-duration=".5s"
@@ -958,7 +945,7 @@
               Улан-Удэ
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--12 wow animate__animated animate__fadeInLeft"
               data-x="928"
               data-y="460"
               data-wow-duration=".5s"
@@ -967,7 +954,7 @@
               Благовещенск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--13 wow animate__animated animate__fadeInLeft"
               data-x="1020"
               data-y="557"
               data-wow-duration=".5s"
@@ -976,7 +963,7 @@
               Южно-Сахалинск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--14 wow animate__animated animate__fadeInLeft"
               data-x="986"
               data-y="507"
               data-wow-duration=".5s"
@@ -985,7 +972,7 @@
               Хабаровск
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--15 wow animate__animated animate__fadeInLeft"
               data-x="490"
               data-y="468"
               data-wow-duration=".5s"
@@ -994,7 +981,7 @@
               Павлодар, Казахстан
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInRight"
+              class="map__item map__item--16 wow animate__animated animate__fadeInRight"
               data-x="89"
               data-y="481"
               data-wow-duration=".5s"
@@ -1003,7 +990,7 @@
               Симферопль
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--17 wow animate__animated animate__fadeInLeft"
               data-x="232"
               data-y="484"
               data-wow-duration=".5s"
@@ -1012,7 +999,7 @@
               Краснодар
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--18 wow animate__animated animate__fadeInLeft"
               data-x="240"
               data-y="508"
               data-wow-duration=".5s"
@@ -1021,7 +1008,7 @@
               Сочи
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--19 wow animate__animated animate__fadeInLeft"
               data-x="470"
               data-y="590"
               data-wow-duration=".5s"
@@ -1030,7 +1017,7 @@
               Душанбе, Таджикистан
             </div>
             <div
-              class="map__item wow animate__animated animate__fadeInLeft"
+              class="map__item map__item--20 wow animate__animated animate__fadeInLeft"
               data-x="1128"
               data-y="475"
               data-wow-duration=".5s"
@@ -1354,6 +1341,7 @@
     <script src="./assets/plagins/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/plagins/modal/jquery.arcticmodal-0.3.min.js"></script>
     <script src="./assets/plagins/mask/jquery.mask.js"></script>
+    <script src="./assets/plagins/scroll/jquery.scrollbar.js"></script>
     <script src="./assets/main.js"></script>
   </body>
 </html>

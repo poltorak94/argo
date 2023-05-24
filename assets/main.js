@@ -5,6 +5,10 @@ $(document).ready(function () {
   //main slider
   const heroSwiper = new Swiper(".hero__swiper", {
     loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
     pagination: {
       clickable: true,
       el: ".hero .slider-pagination__items",
@@ -14,6 +18,10 @@ $(document).ready(function () {
   //слайдер проектов
   const projectsSwiper = new Swiper(".projects__slider", {
     loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
     pagination: {
       clickable: true,
       el: ".projects .swiper__pagination",
@@ -31,16 +39,6 @@ $(document).ready(function () {
 
   //слайдер клиентов
   const clientsSwiper = new Swiper(".clients__swiper", {
-    // loop: true,
-    // slidesPerView: "auto",
-    // spaceBetween: 48,
-    // freeMode: true,
-    // speed: 2000,
-    // autoplay: {
-    //   delay: 0,
-    //   disableOnInteraction: false,
-    // },
-
     observer: true,
     observeParents: true,
     spaceBetween: 48,
@@ -73,7 +71,7 @@ $(document).ready(function () {
               Counter: $(this).attr("data-num"),
             },
             {
-              duration: 3000,
+              duration: 4000,
               easing: "swing",
               step: function (now) {
                 $(this).text(Math.ceil(now).toLocaleString());
@@ -98,17 +96,6 @@ $(document).ready(function () {
   $(".header__nav-item--dropdown").on("mouseleave", function () {
     let dropDown = $(this).find(".header__dropdown-menu");
     dropDown.fadeOut("fast");
-  });
-
-  //точки на карте
-  $(".map__item").each(function () {
-    let xPos = parseFloat($(this).attr("data-x"));
-    let yPos = parseFloat($(this).attr("data-y"));
-
-    let xPos2 = parseFloat($(this).attr("data-x-2"));
-    let yPos2 = parseFloat($(this).attr("data-y-2"));
-    $(this).css("top", yPos + "px");
-    $(this).css("left", xPos + "px");
   });
 
   //modal
@@ -138,4 +125,8 @@ $(document).ready(function () {
     $(this).closest(".header").addClass("header--scroll");
     $(".mob-overlay").fadeToggle();
   });
+
+  if ($(window).width() < 1366) {
+    $(".map__container").scrollbar().parent().addClass("scrollbar-inner");
+  }
 });
