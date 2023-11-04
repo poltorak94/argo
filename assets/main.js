@@ -138,9 +138,35 @@ $(document).ready(function () {
     }
 
     //шаги
+    // $(".steps__link").on("click", function (e) {
+    //     e.preventDefault();
+    //     let item = $(this).closest(".steps__item");
+    //     let nextItem = item.next();
+    //     nextItem.addClass("steps__item--active");
+    //     nextItem.find(".steps__inner").slideDown();
+    //     $(this).remove();
+    //     nextItem.removeClass("steps__item--next");
+    //     nextItem.next().addClass("steps__item--next");
+    // });
+    // $("body").on("click", ".steps__item--next .steps__title", function (e) {
+    //     e.preventDefault();
+    //     let item = $(this).closest(".steps__item");
+    //     let nextItem = item.next();
+    //     item.removeClass("steps__item--next");
+    //     item.addClass("steps__item--active");
+    //     nextItem.addClass("steps__item--next");
+    //     item.find(".steps__inner").slideDown();
+    //     $(this).find(".steps__link-holder").remove();
+    //     item.prev().find(".steps__link-holder").remove();
+    // });
+
     $(".steps__link").on("click", function (e) {
         e.preventDefault();
         let item = $(this).closest(".steps__item");
+        item.closest(".steps")
+            .find(".steps__item")
+            .removeClass("steps__item--active");
+        item.find(".steps__inner").slideUp();
         let nextItem = item.next();
         nextItem.addClass("steps__item--active");
         nextItem.find(".steps__inner").slideDown();
@@ -148,16 +174,16 @@ $(document).ready(function () {
         nextItem.removeClass("steps__item--next");
         nextItem.next().addClass("steps__item--next");
     });
-    $("body").on("click", ".steps__item--next .steps__title", function (e) {
+
+    $(".steps__title").on("click", function (e) {
         e.preventDefault();
         let item = $(this).closest(".steps__item");
-        let nextItem = item.next();
-        item.removeClass("steps__item--next");
+        item.closest(".steps")
+            .find(".steps__item")
+            .removeClass("steps__item--active");
         item.addClass("steps__item--active");
-        nextItem.addClass("steps__item--next");
+        item.closest(".steps").find(".steps__inner").slideUp();
         item.find(".steps__inner").slideDown();
-        $(this).find(".steps__link-holder").remove();
-        item.prev().find(".steps__link-holder").remove();
     });
 
     $(".geography__btn").on("mouseover", function () {

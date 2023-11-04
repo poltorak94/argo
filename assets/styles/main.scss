@@ -1853,6 +1853,11 @@ main {
         transition: 300ms ease all;
         max-width: 429px;
         width: 100%;
+        cursor: pointer;
+
+        &:hover {
+            color: #ea570f;
+        }
     }
 
     &__inner {

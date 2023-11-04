@@ -1411,7 +1411,10 @@ main {
   margin-bottom: 12px;
   transition: 300ms ease all;
   max-width: 429px;
-  width: 100%; }
+  width: 100%;
+  cursor: pointer; }
+  .steps__title:hover {
+    color: #ea570f; }
 .steps__inner {
   max-width: 429px;
   width: 100%;
