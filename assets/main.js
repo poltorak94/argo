@@ -138,27 +138,6 @@ $(document).ready(function () {
     }
 
     //шаги
-    // $(".steps__link").on("click", function (e) {
-    //     e.preventDefault();
-    //     let item = $(this).closest(".steps__item");
-    //     let nextItem = item.next();
-    //     nextItem.addClass("steps__item--active");
-    //     nextItem.find(".steps__inner").slideDown();
-    //     $(this).remove();
-    //     nextItem.removeClass("steps__item--next");
-    //     nextItem.next().addClass("steps__item--next");
-    // });
-    // $("body").on("click", ".steps__item--next .steps__title", function (e) {
-    //     e.preventDefault();
-    //     let item = $(this).closest(".steps__item");
-    //     let nextItem = item.next();
-    //     item.removeClass("steps__item--next");
-    //     item.addClass("steps__item--active");
-    //     nextItem.addClass("steps__item--next");
-    //     item.find(".steps__inner").slideDown();
-    //     $(this).find(".steps__link-holder").remove();
-    //     item.prev().find(".steps__link-holder").remove();
-    // });
 
     $(".steps__link").on("click", function (e) {
         e.preventDefault();
@@ -170,20 +149,27 @@ $(document).ready(function () {
         let nextItem = item.next();
         nextItem.addClass("steps__item--active");
         nextItem.find(".steps__inner").slideDown();
-        $(this).remove();
+        $(this).hide();
         nextItem.removeClass("steps__item--next");
         nextItem.next().addClass("steps__item--next");
+        nextItem.find(".steps__link").show();
     });
 
     $(".steps__title").on("click", function (e) {
         e.preventDefault();
         let item = $(this).closest(".steps__item");
-        item.closest(".steps")
-            .find(".steps__item")
-            .removeClass("steps__item--active");
-        item.addClass("steps__item--active");
-        item.closest(".steps").find(".steps__inner").slideUp();
-        item.find(".steps__inner").slideDown();
+
+        if (item.hasClass("steps__item--active")) {
+            return;
+        } else {
+            item.closest(".steps")
+                .find(".steps__item")
+                .removeClass("steps__item--active");
+            item.addClass("steps__item--active");
+            item.closest(".steps").find(".steps__inner").slideUp();
+            item.find(".steps__inner").slideDown();
+            item.find(".steps__link").show();
+        }
     });
 
     $(".geography__btn").on("mouseover", function () {
@@ -214,6 +200,21 @@ $(document).ready(function () {
                 $(this).fadeIn();
             }
         });
+    });
+
+    $(".step-tabs__mob-item-title").on("click", function () {
+        let item = $(this).closest(".step-tabs__mob-item");
+        let container = $(this).closest(".step-tabs__mob");
+
+        if (!item.hasClass("step-tabs__mob-item--active")) {
+            container
+                .find(".step-tabs__mob-item")
+                .removeClass("step-tabs__mob-item--active");
+
+            item.addClass("step-tabs__mob-item--active");
+            container.find(".step-tabs__mob-item-inner").slideUp();
+            item.find(".step-tabs__mob-item-inner").slideDown();
+        }
     });
 
     const design = $(".design");
