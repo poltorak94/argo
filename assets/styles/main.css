@@ -297,7 +297,7 @@ main {
     .btn-arrow--white:active {
       color: #fff; }
     .btn-arrow--white:hover svg {
-      transform: rotate(40deg); }
+      transform: rotate(45deg); }
   .btn-arrow--orange {
     border-color: #ea570f;
     color: #ea570f;
@@ -1408,7 +1408,7 @@ main {
   transition: 300ms ease all; }
 .steps__title {
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   transition: 300ms ease all;
   max-width: 429px;
   width: 100%;
@@ -1679,12 +1679,12 @@ main {
         text-decoration: none; }
   .seo-text p {
     line-height: 120%;
-    font-size: 20px;
+    font-size: 16px;
     color: #5c6467;
     padding-bottom: 20px; }
   .seo-text ul {
     line-height: 120%;
-    font-size: 20px;
+    font-size: 16px;
     color: #5c6467;
     padding-bottom: 20px;
     padding-left: 20px; }
@@ -1912,7 +1912,7 @@ main {
 
   .seo-text p,
   .seo-text ul {
-    font-size: 18px; }
+    font-size: 16px; }
 
   .seo-text__features {
     margin-bottom: 56px; }

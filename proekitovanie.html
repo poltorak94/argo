@@ -303,7 +303,7 @@
                         <a
                             href="#"
                             target="_blank"
-                            class="hero__btn btn consult-modal"
+                            class="hero__btn btn plan-modal"
                         >
                             Оставить заявку
                         </a>
@@ -577,7 +577,7 @@
                         </div>
                         <a
                             href="#"
-                            class="step__item-price-btn btn consult-modal"
+                            class="step__item-price-btn btn marketing-modal"
                         >
                             Оставить заявку
                         </a>
@@ -833,7 +833,7 @@
                     <div class="step__item-price">
                         <div class="step__item-price-text">
                             <div class="step__item-price-title">
-                                Стоимость проведения маркетингого анализа
+                                Стоимость проработки ассортиментной матрицы
                             </div>
                             <div class="step__item-price-value">
                                 от 100 000 ₽
@@ -841,7 +841,7 @@
                         </div>
                         <a
                             href="#"
-                            class="step__item-price-btn btn consult-modal"
+                            class="step__item-price-btn btn matrix-modal"
                         >
                             Оставить заявку
                         </a>
@@ -1187,11 +1187,11 @@
                 <div class="step__item-price step__item-price--mob">
                     <div class="step__item-price-text">
                         <div class="step__item-price-title">
-                            Стоимость проведения маркетингого анализа
+                            Стоимость проработки ассортиментной матрицы
                         </div>
                         <div class="step__item-price-value">от 100 000 ₽</div>
                     </div>
-                    <a href="#" class="step__item-price-btn btn consult-modal">
+                    <a href="#" class="step__item-price-btn btn matrix-modal">
                         Оставить заявку
                     </a>
                 </div>
@@ -1410,7 +1410,7 @@
                                 </div>
                                 <a
                                     href="#"
-                                    class="step-tabs__module-btn btn consult-modal"
+                                    class="step-tabs__module-btn btn plan-modal"
                                 >
                                     Оставить заявку
                                 </a>
@@ -1628,16 +1628,13 @@
                     <div class="step__item-price step__item-price--mob">
                         <div class="step__item-price-text">
                             <div class="step__item-price-title">
-                                Стоимость проведения маркетингого анализа
+                                Стоимость разработки планировочных решений
                             </div>
                             <div class="step__item-price-value">
-                                от 100 000 ₽
+                                от 180 000 ₽
                             </div>
                         </div>
-                        <a
-                            href="#"
-                            class="step__item-price-btn btn consult-modal"
-                        >
+                        <a href="#" class="step__item-price-btn btn plan-modal">
                             Оставить заявку
                         </a>
                     </div>
@@ -2281,7 +2278,7 @@
                 </div>
             </div>
         </footer>
-        <div class="modal modal--hidden">
+        <div class="modal modal--marketing modal--hidden">
             <a href="#" class="modal__close arcticmodal-close">
                 <svg
                     width="24"
@@ -2301,6 +2298,307 @@
                 <div class="modal__title">
                     Оставить заявку на проведение маркетингого анализа
                 </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Имя</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Почта</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Телефон</div>
+                        <input
+                            type="text"
+                            class="modal__form-input-field input-tel"
+                        />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <label class="custom-checkbox">
+                        <input
+                            type="checkbox"
+                            checked
+                            class="custom-checkbox__field"
+                        />
+                        <span class="custom-checkbox__checkmark"></span>
+                        <span class="custom-checkbox__text">
+                            Я даю согласие на
+                            <a href="#" target="_blank">
+                                обработку персональных данных</a
+                            >
+                        </span>
+                    </label>
+                </div>
+                <input
+                    type="submit"
+                    value="Получить консультацию"
+                    class="modal__form-submit btn"
+                />
+            </form>
+            <div class="modal__info">
+                <div class="modal__title">Контактная информация</div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Офис</div>
+                    <div class="modal__info-group-value">
+                        г. Москва, Щёлковское шоссе 100, к.5, офис 706
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Склад</div>
+                    <div class="modal__info-group-value">
+                        Московская область, г. Электроугли, ул. Центральная, 116
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Время работы</div>
+                    <div class="modal__info-group-value">
+                        Пн-пт: с 9:00 до 18:00 <br />
+                        Сб-вс: выходной
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Телефон</div>
+                    <a href="tel:+74953748472" class="modal__info-group-link">
+                        +7 495 374-84-72
+                    </a>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Почта</div>
+                    <a
+                        href="mailto:bav@argo.studio"
+                        class="modal__info-group-link"
+                    >
+                        bav@argo.studio
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--matrix modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 5L12 12M19 19L12 12M12 12L19 5L5 19"
+                        stroke="#B5BABC"
+                        stroke-width="2"
+                    />
+                </svg>
+            </a>
+            <form class="modal__form">
+                <div class="modal__title">
+                    Оставить заявку на проработку ассортиментной матрицы
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Имя</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Почта</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Телефон</div>
+                        <input
+                            type="text"
+                            class="modal__form-input-field input-tel"
+                        />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <label class="custom-checkbox">
+                        <input
+                            type="checkbox"
+                            checked
+                            class="custom-checkbox__field"
+                        />
+                        <span class="custom-checkbox__checkmark"></span>
+                        <span class="custom-checkbox__text">
+                            Я даю согласие на
+                            <a href="#" target="_blank">
+                                обработку персональных данных</a
+                            >
+                        </span>
+                    </label>
+                </div>
+                <input
+                    type="submit"
+                    value="Получить консультацию"
+                    class="modal__form-submit btn"
+                />
+            </form>
+            <div class="modal__info">
+                <div class="modal__title">Контактная информация</div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Офис</div>
+                    <div class="modal__info-group-value">
+                        г. Москва, Щёлковское шоссе 100, к.5, офис 706
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Склад</div>
+                    <div class="modal__info-group-value">
+                        Московская область, г. Электроугли, ул. Центральная, 116
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Время работы</div>
+                    <div class="modal__info-group-value">
+                        Пн-пт: с 9:00 до 18:00 <br />
+                        Сб-вс: выходной
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Телефон</div>
+                    <a href="tel:+74953748472" class="modal__info-group-link">
+                        +7 495 374-84-72
+                    </a>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Почта</div>
+                    <a
+                        href="mailto:bav@argo.studio"
+                        class="modal__info-group-link"
+                    >
+                        bav@argo.studio
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--plan modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 5L12 12M19 19L12 12M12 12L19 5L5 19"
+                        stroke="#B5BABC"
+                        stroke-width="2"
+                    />
+                </svg>
+            </a>
+            <form class="modal__form">
+                <div class="modal__title">
+                    Оставить заявку на разработку планировочных решений
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Имя</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Почта</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Телефон</div>
+                        <input
+                            type="text"
+                            class="modal__form-input-field input-tel"
+                        />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <label class="custom-checkbox">
+                        <input
+                            type="checkbox"
+                            checked
+                            class="custom-checkbox__field"
+                        />
+                        <span class="custom-checkbox__checkmark"></span>
+                        <span class="custom-checkbox__text">
+                            Я даю согласие на
+                            <a href="#" target="_blank">
+                                обработку персональных данных</a
+                            >
+                        </span>
+                    </label>
+                </div>
+                <input
+                    type="submit"
+                    value="Получить консультацию"
+                    class="modal__form-submit btn"
+                />
+            </form>
+            <div class="modal__info">
+                <div class="modal__title">Контактная информация</div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Офис</div>
+                    <div class="modal__info-group-value">
+                        г. Москва, Щёлковское шоссе 100, к.5, офис 706
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Склад</div>
+                    <div class="modal__info-group-value">
+                        Московская область, г. Электроугли, ул. Центральная, 116
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Время работы</div>
+                    <div class="modal__info-group-value">
+                        Пн-пт: с 9:00 до 18:00 <br />
+                        Сб-вс: выходной
+                    </div>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Телефон</div>
+                    <a href="tel:+74953748472" class="modal__info-group-link">
+                        +7 495 374-84-72
+                    </a>
+                </div>
+                <div class="modal__info-group">
+                    <div class="modal__info-group-title">Почта</div>
+                    <a
+                        href="mailto:bav@argo.studio"
+                        class="modal__info-group-link"
+                    >
+                        bav@argo.studio
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--main modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 5L12 12M19 19L12 12M12 12L19 5L5 19"
+                        stroke="#B5BABC"
+                        stroke-width="2"
+                    />
+                </svg>
+            </a>
+            <form class="modal__form">
+                <div class="modal__title">Получить консультацию</div>
                 <div class="modal__form-group">
                     <div class="modal__form-input">
                         <div class="modal__form-input-label">Имя</div>

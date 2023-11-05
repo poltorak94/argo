@@ -106,18 +106,43 @@ $(document).ready(function () {
     });
 
     //modal
-    $(
-        ".header__nav-callback, .production__order, .mob-block__callback, .consult-modal"
-    ).on("click", function (e) {
-        e.preventDefault();
-        $("body").trigger("open.modal");
-    });
+    $(".header__nav-callback, .production__order, .mob-block__callback").on(
+        "click",
+        function (e) {
+            e.preventDefault();
+            $(".modal--main").removeClass("modal--hidden");
+            $(".modal--main").arcticmodal({
+                afterClose: function (data, el) {
+                    $(".modal--main").addClass("modal--hidden");
+                },
+            });
+        }
+    );
 
-    $("body").on("open.modal", function () {
-        $(".modal").removeClass("modal--hidden");
-        $(".modal").arcticmodal({
+    $(".plan-modal").on("click", function (e) {
+        e.preventDefault();
+        $(".modal--plan").removeClass("modal--hidden");
+        $(".modal--plan").arcticmodal({
             afterClose: function (data, el) {
-                $(".modal").addClass("modal--hidden");
+                $(".modal--plan").addClass("modal--hidden");
+            },
+        });
+    });
+    $(".matrix-modal").on("click", function (e) {
+        e.preventDefault();
+        $(".modal--matrix").removeClass("modal--hidden");
+        $(".modal--matrix").arcticmodal({
+            afterClose: function (data, el) {
+                $(".modal--matrix").addClass("modal--hidden");
+            },
+        });
+    });
+    $(".marketing-modal").on("click", function (e) {
+        e.preventDefault();
+        $(".modal--marketing").removeClass("modal--hidden");
+        $(".modal--marketing").arcticmodal({
+            afterClose: function (data, el) {
+                $(".modal--marketing").addClass("modal--hidden");
             },
         });
     });
