@@ -1812,6 +1812,12 @@ main {
                 display: none;
             }
         }
+
+        &:last-child {
+            .steps__line {
+                opacity: 0;
+            }
+        }
     }
 
     &__num {

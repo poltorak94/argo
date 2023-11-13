@@ -1381,6 +1381,8 @@ main {
     display: block; }
   .steps__item:last-child .steps__link-holder {
     display: none; }
+  .steps__item:last-child .steps__line {
+    opacity: 0; }
 .steps__num {
   display: inline-flex;
   align-items: center;
