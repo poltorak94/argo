@@ -218,11 +218,11 @@ $(document).ready(function () {
 
         let tabs = container.closest(".step-tabs");
         tabs.find(".step-tabs__item").each(function () {
-            $(this).fadeOut();
+            $(this).hide();
             let tabId = $(this).attr("data-id");
 
             if (tabId == navId) {
-                $(this).fadeIn();
+                $(this).show();
             }
         });
     });

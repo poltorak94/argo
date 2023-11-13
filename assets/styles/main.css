@@ -1376,7 +1376,7 @@ main {
   .steps__item-desc {
     font-size: 16px;
     line-height: 130%;
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   .steps__item:first-child .steps__inner {
     display: block; }
   .steps__item:last-child .steps__link-holder {
@@ -1422,7 +1422,7 @@ main {
   .steps__inner ul {
     font-size: 16px;
     padding-left: 20px;
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
     .steps__inner ul li {
       list-style: disc;
       line-height: 130%; }
