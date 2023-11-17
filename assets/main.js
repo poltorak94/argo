@@ -180,7 +180,7 @@ $(document).ready(function () {
         nextItem.find(".steps__link").show();
     });
 
-    $(".steps__title").on("click", function (e) {
+    $(".steps__title, .steps__num").on("click", function (e) {
         e.preventDefault();
         let item = $(this).closest(".steps__item");
 

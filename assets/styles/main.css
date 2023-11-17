@@ -1334,7 +1334,7 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 128px;
   grid-row-gap: 88px;
-  margin-top: 120px; }
+  margin-top: 70px; }
   .step__image {
     width: 100%;
     object-fit: cover; }
@@ -1394,7 +1394,8 @@ main {
   color: #5c6467;
   font-size: 14px;
   background: #e6ecef;
-  transition: 300ms ease all; }
+  transition: 300ms ease all;
+  cursor: pointer; }
 .steps__left {
   display: flex;
   flex-direction: column;
@@ -1452,7 +1453,7 @@ main {
 
 .geography {
   min-height: 480px;
-  margin-top: 120px;
+  margin-top: 40px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1477,7 +1478,7 @@ main {
     transform: scale(1.1); }
 
 .step-tabs {
-  margin-top: 120px;
+  margin-top: 40px;
   padding-top: 96px;
   padding-bottom: 96px;
   background: #f4f4f4; }
@@ -1542,8 +1543,7 @@ main {
     .step-tabs__item-title {
       font-size: 24px; }
     .step-tabs__item-desc {
-      max-width: 728px;
-      margin: 16px 0 32px; }
+      margin: 16px 0; }
     .step-tabs__item-img {
       width: 100%;
       max-width: 100%;
@@ -1576,7 +1576,7 @@ main {
       justify-content: center; }
 
 .design {
-  padding-top: 120px; }
+  padding-top: 70px; }
   .design__images {
     height: 440px; }
     .design__images img {
@@ -1625,7 +1625,7 @@ main {
   .design__groups {
     display: flex;
     align-items: flex-start;
-    margin-top: 87px;
+    margin-top: 70px;
     justify-content: space-between; }
   .design__item {
     width: 100%; }
@@ -1667,6 +1667,9 @@ main {
     margin-top: 12px;
     width: 100%;
     justify-content: center; }
+
+.production--p {
+  margin-top: 70px; }
 
 .seo-text {
   padding-bottom: 120px; }
@@ -1715,6 +1718,9 @@ main {
 
 .step-tabs__mob {
   display: none; }
+
+.projects--p {
+  padding-top: 70px; }
 
 @media (max-width: 989px) {
   .hero--p {
@@ -1925,6 +1931,40 @@ main {
 @media (max-width: 479px) {
   .seo-text__btn {
     width: 100%;
-    justify-content: center; } }
+    justify-content: center; }
+
+  .projects--p {
+    padding-top: 40px; }
+    .projects--p .projects__info {
+      margin: 24px 0 40px; }
+    .projects--p .projects__info-btn {
+      margin-top: 20px; }
+
+  .step {
+    margin-top: 40px; }
+
+  .steps__link-holder {
+    display: none; }
+
+  .steps__title {
+    margin-bottom: 12px; }
+
+  .steps__inner ul {
+    margin-bottom: 12px; }
+
+  .steps__item-desc {
+    margin-bottom: 12px; }
+
+  .geography {
+    margin-top: 40px; }
+
+  .step__desc {
+    margin-bottom: 0; }
+
+  .step-tabs {
+    margin-top: 40px; }
+
+  .step-tabs__mob-item-inner p {
+    padding-bottom: 12px; } }
 
 /*# sourceMappingURL=main.css.map */
