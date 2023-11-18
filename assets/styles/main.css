@@ -1959,6 +1959,9 @@ main {
     margin-top: 40px; }
 
   .step__desc {
+    margin-bottom: 24px; }
+
+  .step--second .step__desc {
     margin-bottom: 0; }
 
   .step-tabs {
