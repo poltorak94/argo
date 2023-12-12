@@ -52,6 +52,18 @@ $(document).ready(function () {
         },
     });
 
+    //cлайдер страница дизайн
+    const designSlider = new Swiper(".design-step__group-slider", {
+        observer: true,
+        observeParents: true,
+        slidesPerView: "auto",
+        loop: true,
+        navigation: {
+            nextEl: ".design-right",
+            prevEl: ".design-left",
+        },
+    });
+
     //счетчик
     const about = $(".about");
     if (about.length) {

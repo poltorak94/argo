@@ -1,0 +1,310 @@
+.design-page {
+    .design__title {
+        margin-bottom: 16px;
+    }
+    .design__desc {
+        font-size: 20px;
+        color: #5c6467;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+    .steps__title {
+        margin-bottom: 12px;
+    }
+    .step-tabs__nav-item {
+        font-size: 16px;
+    }
+    .step-tabs__item-title {
+        margin-bottom: 24px;
+    }
+    .step-tabs__groups {
+        align-items: normal;
+    }
+}
+
+.design__steps-desc {
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 792px;
+    margin: 64px 0 40px;
+}
+
+.design {
+    &__steps {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 12px;
+    }
+
+    &__step {
+        min-height: 320px;
+        padding: 20px;
+        color: #fff;
+        border-radius: 8px;
+        position: relative;
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.56);
+            z-index: 2;
+        }
+
+        &-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+        }
+
+        &-num {
+            position: relative;
+            z-index: 3;
+            min-width: 28px;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ea570f;
+            border-radius: 50%;
+            font-size: 14px;
+        }
+
+        &-text {
+            margin-top: 16px;
+            position: relative;
+            z-index: 3;
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+}
+
+.design-video {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    img {
+        width: 100%;
+        max-height: 640px;
+    }
+}
+
+.design-main {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    min-height: 620px;
+    background: url("../img/design-main.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+    padding: 48px 64px;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+        opacity: 0.56;
+        background: linear-gradient(
+            180deg,
+            rgba(48, 48, 48, 0.4) 0%,
+            rgba(48, 48, 48, 0.8) 100%
+        );
+    }
+    &__desc {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    &__info {
+        position: relative;
+        z-index: 2;
+        max-width: 55.6%;
+        margin-right: 100px;
+        &-pre-title {
+            color: #fff;
+        }
+    }
+
+    &__form {
+        position: relative;
+        z-index: 2;
+        flex: 1;
+        color: #232729;
+        border-radius: 8px;
+        background: #fff;
+        padding: 40px 48px;
+        display: flex;
+        flex-direction: column;
+        &-title {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            margin-bottom: 24px;
+
+            span {
+                &:first-child {
+                    font-size: 14px;
+                }
+                &:last-child {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-btn {
+            text-align: center;
+            margin-bottom: 12px;
+            justify-content: center;
+        }
+        .step__btn {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.design-step {
+    &__groups {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 113px;
+        margin-bottom: 64px;
+    }
+
+    &__group {
+        &-title {
+            margin-bottom: 32px;
+        }
+        &-desc {
+            margin-bottom: 32px;
+        }
+
+        &-slider {
+            overflow: hidden;
+            position: relative;
+            &-slide {
+                width: 100% !important;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .design-left {
+        left: 20px;
+        top: calc(50% - 26px);
+    }
+    .design-right {
+        right: 20px;
+        transform: scale(-1, -1);
+        top: calc(50% - 26px);
+    }
+
+    .step__desc {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1199px) {
+    .design__steps {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+    .design__step {
+        min-height: 156px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .design-main {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        min-height: auto;
+    }
+    .design-main__info {
+        max-width: 100%;
+        margin-bottom: 120px;
+        margin-right: 0;
+    }
+    .design-main__form-title span:first-child {
+        margin-right: 20px;
+    }
+    .design-step__groups {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
+    }
+    .design-step__group-slider {
+        margin-top: 40px;
+    }
+    .design-step {
+        margin-bottom: 40px;
+        .step__item-price {
+            display: none;
+            &--mob {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 989px) {
+    .design-main {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .design__step-text {
+        font-size: 18px;
+    }
+    .design__steps {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .design-main__desc {
+        font-size: 20px;
+    }
+    .design-main__info {
+        margin-bottom: 80px;
+    }
+    .design-main {
+        padding: 16px;
+    }
+    .design-main__form {
+        width: 100%;
+        padding: 20px;
+    }
+    .design-main__form-title span:first-child {
+        font-size: 12px;
+    }
+    .design-main__form-title span:last-child {
+        font-size: 18px;
+    }
+    .design-step {
+        .production__swiper-nav-item {
+            bottom: auto;
+        }
+        .production__swiper-nav {
+            max-width: none;
+            position: static;
+        }
+    }
+}
