@@ -730,39 +730,31 @@ main {
     display: none; }
 
 .design-stages {
-  margin-top: 70px;
-  margin-bottom: 40px; }
+  margin-top: 70px; }
   .design-stages__title {
     margin-bottom: 40px; }
   .design-stages__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 48px;
-    grid-row-gap: 40px;
-    margin-left: -10px; }
-  .design-stages__item {
-    padding: 20px;
-    transition: 300ms ease all; }
-    .design-stages__item:hover {
-      background: #fff;
-      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06); }
-    .design-stages__item-desc {
-      margin-top: 24px;
-      margin-bottom: 16px;
-      font-size: 18px; }
-    .design-stages__item-link {
-      display: inline-flex;
-      align-items: center;
-      transition: 200ms ease all;
-      color: #778085; }
-      .design-stages__item-link svg {
-        margin-left: 8px; }
-        .design-stages__item-link svg path {
-          transition: 200ms ease all; }
-      .design-stages__item-link:hover {
-        color: #ea570f; }
-        .design-stages__item-link:hover svg path {
-          fill: #ea570f; }
+    grid-row-gap: 40px; }
+  .design-stages__item-desc {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 18px; }
+  .design-stages__item-link {
+    display: inline-flex;
+    align-items: center;
+    transition: 200ms ease all;
+    color: #778085; }
+    .design-stages__item-link svg {
+      margin-left: 8px; }
+      .design-stages__item-link svg path {
+        transition: 200ms ease all; }
+    .design-stages__item-link:hover {
+      color: #ea570f; }
+      .design-stages__item-link:hover svg path {
+        fill: #ea570f; }
 
 @media (max-width: 1365px) {
   .container {

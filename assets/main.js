@@ -62,6 +62,10 @@ $(document).ready(function () {
             nextEl: ".design-right",
             prevEl: ".design-left",
         },
+        pagination: {
+            clickable: true,
+            el: ".design-step__group-slider .swiper__pagination",
+        },
     });
 
     //счетчик

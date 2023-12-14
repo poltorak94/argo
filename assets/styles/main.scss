@@ -980,7 +980,6 @@ main {
 
 .design-stages {
     margin-top: 70px;
-    margin-bottom: 40px;
 
     &__title {
         margin-bottom: 40px;
@@ -991,17 +990,9 @@ main {
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 48px;
         grid-row-gap: 40px;
-        margin-left: -10px;
     }
 
     &__item {
-        padding: 20px;
-        transition: 300ms ease all;
-        &:hover {
-            background: #fff;
-            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
-        }
-
         &-desc {
             margin-top: 24px;
             margin-bottom: 16px;
