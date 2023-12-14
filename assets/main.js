@@ -68,6 +68,11 @@ $(document).ready(function () {
         },
     });
 
+    //видео страница дизайн
+    $(".design-video__play").on("click", function (e) {
+        e.preventDefault();
+        $(this).closest(".design-video__cover").remove();
+    });
     //счетчик
     const about = $(".about");
     if (about.length) {
