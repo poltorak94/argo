@@ -1011,12 +1011,14 @@ main {
                     transition: 200ms ease all;
                 }
             }
+        }
 
-            &:hover {
+        &:hover {
+            .design-stages__item-link {
                 color: #ea570f;
-                svg path {
-                    fill: #ea570f;
-                }
+            }
+            svg path {
+                fill: #ea570f;
             }
         }
     }
