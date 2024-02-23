@@ -175,6 +175,9 @@
   .catalog-form--change .catalog-form__files-select {
     display: block; }
 
+.modal--hidden {
+  display: none !important; }
+
 .modal--thanks {
   max-width: 488px;
   display: flex;
