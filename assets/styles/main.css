@@ -120,6 +120,16 @@ main {
         border-color: #ea570f; }
     .header--scroll .header__nav-logo svg .color-line {
       fill: #043f5c; }
+  .header--black {
+    color: #232729; }
+    .header--black .header__nav-callback {
+      border-color: #232729; }
+      .header--black .header__nav-callback:hover {
+        border-color: #ea570f; }
+    .header--black .header__nav-logo svg .color-line {
+      fill: #043f5c; }
+    .header--black .header__nav-tel svg {
+      opacity: 1; }
 
 .header__nav-item--dropdown:hover .header__nav-item-title {
   color: #ea570f;

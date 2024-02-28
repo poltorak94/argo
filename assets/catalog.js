@@ -51,4 +51,92 @@ $(document).ready(function () {
             },
         });
     });
+
+    const categorySlider = new Swiper(".category-projects__slider", {
+        spaceBetween: 16,
+        slidesPerView: 2,
+        pagination: {
+            clickable: true,
+            el: ".category-projects .swiper__pagination",
+        },
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            // when window width is >= 990
+            990: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+        },
+    });
+
+    $(".category-tags__show-more").on("click", function () {
+        $(this)
+            .closest(".category-tags__group")
+            .addClass("category-tags__group--show");
+    });
+
+    $(".category-tags__hide").on("click", function () {
+        $(this)
+            .closest(".category-tags__group")
+            .removeClass("category-tags__group--show");
+    });
+
+    $(".category-tags__title--mob").on("click", function () {
+        $(this)
+            .closest(".category-tags__group")
+            .find(".category-tags__holder")
+            .slideToggle();
+
+        $(this).toggleClass("category-tags__title--mob--active");
+    });
+
+    const productSlider = new Swiper(".product-slider", {
+        slidesPerView: 1,
+        navigation: {
+            nextEl: ".product-slider__nav--next",
+            prevEl: ".product-slider__nav--prev",
+        },
+        pagination: {
+            clickable: true,
+            el: ".product .swiper__pagination",
+        },
+    });
+
+    document.querySelectorAll(".tip").forEach(function (el) {
+        tippy(el, {
+            content: el.getAttribute("data-template"),
+            interactive: true,
+            placement: "bottom",
+        });
+    });
+
+    $(".product-table__nav-item").on("click", function (e) {
+        e.preventDefault();
+
+        let navId = $(this).attr("data-id");
+
+        $(".product-table__nav-item").removeClass(
+            "product-table__nav-item--active"
+        );
+
+        $(this).addClass("product-table__nav-item--active");
+
+        $(".product-table__inner").addClass("product-table__inner--hidden");
+        $(".product-table__inner").each(function () {
+            let tabId = $(this).attr("data-id");
+
+            if (tabId == navId) {
+                $(this).removeClass("product-table__inner--hidden");
+            }
+        });
+    });
 });

@@ -167,6 +167,25 @@ main {
             fill: #043f5c;
         }
     }
+
+    &--black {
+        color: #232729;
+
+        .header__nav-callback {
+            border-color: #232729;
+            &:hover {
+                border-color: $orange;
+            }
+        }
+
+        .header__nav-logo svg .color-line {
+            fill: #043f5c;
+        }
+
+        .header__nav-tel svg {
+            opacity: 1;
+        }
+    }
 }
 
 .header__nav-item--dropdown:hover .header__nav-item {
