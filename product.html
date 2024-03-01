@@ -312,11 +312,11 @@
                     <li class="breadcrumbs__item">Витрина Tesey</li>
                 </ul>
                 <div class="product-main container">
-                    <div
+                    <h1
                         class="product-main-info__title product-main-info__title--mob title"
                     >
                         Вертикальная витрина Tesey
-                    </div>
+                    </h1>
                     <div class="product-slider swiper">
                         <div class="swiper-wrapper">
                             <div class="product-slider__slide swiper-slide">
@@ -473,9 +473,9 @@
                         </a>
                     </div>
                     <div class="product-main-info">
-                        <div class="product-main-info__title title">
+                        <h1 class="product-main-info__title title">
                             Вертикальная витрина Tesey
-                        </div>
+                        </h1>
                         <div class="product-options">
                             <div class="product-option">
                                 <div class="product-option__title">Бренд</div>
@@ -543,10 +543,7 @@
                                 под ваши задачи
                             </div>
 
-                            <a
-                                href="#"
-                                class="product-main-button btn plan-modal"
-                            >
+                            <a href="#" class="product-main-button btn">
                                 Оставить заявку
                             </a>
                         </div>
@@ -1252,9 +1249,9 @@
                         <div class="category-projects__pre-title pre-title">
                             Проекты
                         </div>
-                        <div class="category-projects__title title">
+                        <h2 class="category-projects__title title">
                             Команда Арго и оборудование Brandford
-                        </div>
+                        </h2>
                         <div class="swiper category-projects__slider">
                             <div class="swiper-wrapper">
                                 <div
@@ -1336,7 +1333,7 @@
                                         </span>
                                         <input
                                             type="text"
-                                            class="catalog-form__group-item-field"
+                                            class="catalog-form__group-item-field input-tel"
                                             required
                                         />
                                     </div>
@@ -1651,6 +1648,71 @@
             <div class="modal__thanks-desc">
                 В ближайшее время с вами свяжется наш специалист
             </div>
+        </div>
+        <div class="modal modal--main modal--product modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M1 1L8 8M15 15L8 8M8 8L15 1L1 15"
+                        stroke="#043F5C"
+                        stroke-width="2"
+                    />
+                </svg>
+            </a>
+            <form class="modal__form">
+                <div class="modal__title">
+                    Оставить заявку на консультацию или расчет стоимости
+                    оборудования
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Имя</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Почта</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Телефон</div>
+                        <input
+                            type="text"
+                            class="modal__form-input-field input-tel"
+                        />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <label class="custom-checkbox">
+                        <input
+                            type="checkbox"
+                            checked=""
+                            class="custom-checkbox__field"
+                        />
+                        <span class="custom-checkbox__checkmark"></span>
+                        <span class="custom-checkbox__text">
+                            Я даю согласие на
+                            <a href="#" target="_blank">
+                                обработку персональных данных</a
+                            >
+                        </span>
+                    </label>
+                </div>
+                <input
+                    type="submit"
+                    value="Получить консультацию"
+                    class="modal__form-submit btn"
+                />
+            </form>
         </div>
         <div class="mob-overlay"></div>
         <script src="https://unpkg.com/@popperjs/core@2"></script>

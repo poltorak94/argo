@@ -325,20 +325,9 @@
         .seo-text__main {
             margin-bottom: 0;
         }
-
-        p {
-            font-size: 20px;
-        }
     }
 
     @media (max-width: 767px) {
-        .catalog .seo-text p {
-            font-size: 18px;
-        }
-        .catalog .seo-text p {
-            font-size: 18px;
-        }
-
         .catalog .seo-text {
             padding-top: 64px;
             padding-bottom: 64px;
@@ -467,10 +456,6 @@
 @media (max-width: 479px) {
     .breadcrumbs__item::after {
         margin: 0 4px;
-    }
-
-    .category .seo-text p {
-        font-size: 18px;
     }
 }
 

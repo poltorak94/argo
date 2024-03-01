@@ -218,13 +218,7 @@
   padding-bottom: 80px; }
   .category .seo-text .seo-text__main {
     margin-bottom: 0; }
-  .category .seo-text p {
-    font-size: 20px; }
 @media (max-width: 767px) {
-  .category .catalog .seo-text p {
-    font-size: 18px; }
-  .category .catalog .seo-text p {
-    font-size: 18px; }
   .category .catalog .seo-text {
     padding-top: 64px;
     padding-bottom: 64px; } }
@@ -307,10 +301,7 @@
     padding-top: 64px; } }
 @media (max-width: 479px) {
   .breadcrumbs__item::after {
-    margin: 0 4px; }
-
-  .category .seo-text p {
-    font-size: 18px; } }
+    margin: 0 4px; } }
 .product {
   padding-top: calc(104px - 32px); }
 

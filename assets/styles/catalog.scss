@@ -121,10 +121,6 @@
         .seo-text__main {
             margin-bottom: 0;
         }
-
-        p {
-            font-size: 20px;
-        }
     }
 }
 
@@ -447,10 +443,6 @@
         padding: 48px 0;
     }
 
-    .catalog .seo-text p {
-        font-size: 18px;
-    }
-
     .catalog .seo-text {
         padding-top: 64px;
         padding-bottom: 64px;
@@ -482,5 +474,12 @@
 
     .modal--thanks .modal__thanks-desc {
         font-size: 14px;
+    }
+
+    .catalog .hero--p {
+        max-height: 400px;
+        .hero__title {
+            margin-bottom: 0;
+        }
     }
 }

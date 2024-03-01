@@ -139,4 +139,14 @@ $(document).ready(function () {
             }
         });
     });
+
+    $(".product-main-button").on("click", function (e) {
+        e.preventDefault();
+        $(".modal--product").removeClass("modal--hidden");
+        $(".modal--product").arcticmodal({
+            afterClose: function (data, el) {
+                $(".modal--product").addClass("modal--hidden");
+            },
+        });
+    });
 });

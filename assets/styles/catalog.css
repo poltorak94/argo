@@ -80,8 +80,6 @@
   padding-bottom: 80px; }
   .catalog .seo-text .seo-text__main {
     margin-bottom: 0; }
-  .catalog .seo-text p {
-    font-size: 20px; }
 
 .catalog-form {
   color: #fff;
@@ -306,9 +304,6 @@
   .catalog-form {
     padding: 48px 0; }
 
-  .catalog .seo-text p {
-    font-size: 18px; }
-
   .catalog .seo-text {
     padding-top: 64px;
     padding-bottom: 64px; } }
@@ -331,6 +326,11 @@
     font-size: 20px; }
 
   .modal--thanks .modal__thanks-desc {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .catalog .hero--p {
+    max-height: 400px; }
+    .catalog .hero--p .hero__title {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=catalog.css.map */
