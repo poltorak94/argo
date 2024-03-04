@@ -308,8 +308,7 @@
 .product-main {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 16px; }
+  justify-content: space-between; }
 
 .product-slider {
   width: 100%;
@@ -359,9 +358,8 @@
 .product-main-info {
   flex: 1; }
   .product-main-info__title {
-    margin-bottom: 32px; }
-    .product-main-info__title--mob {
-      display: none; }
+    margin-bottom: 24px;
+    margin-top: 16px; }
 
 .product-option {
   display: grid;
@@ -485,13 +483,6 @@
     max-width: 100%;
     margin-bottom: 40px;
     margin-right: 0; }
-
-  .product-main-info__title {
-    display: none; }
-
-  .product-main-info__title--mob {
-    display: block;
-    margin-bottom: 24px; }
 
   .product-button-holder {
     display: flex;
