@@ -57,6 +57,15 @@
         min-width: 15%;
         &:last-child {
             margin-right: 0;
+            flex: 1;
+        }
+
+        &:nth-child(1) {
+            width: 15%;
+        }
+
+        &:nth-child(2) {
+            width: 16%;
         }
 
         &--show {

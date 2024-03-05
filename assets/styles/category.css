@@ -38,7 +38,12 @@
     margin-right: 48px;
     min-width: 15%; }
     .category-tags__group:last-child {
-      margin-right: 0; }
+      margin-right: 0;
+      flex: 1; }
+    .category-tags__group:nth-child(1) {
+      width: 15%; }
+    .category-tags__group:nth-child(2) {
+      width: 16%; }
     .category-tags__group--show .category-tags__item--hidden {
       display: inline-flex; }
     .category-tags__group--show .category-tags__show-more {
