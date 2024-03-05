@@ -877,16 +877,26 @@ main {
 
   .map {
     padding-bottom: 0; }
+    .map .map__pre-title {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .map .map__title {
+      font-size: 24px;
+      line-height: 28.8px; }
+    .map__items {
+      display: none; }
     .map__container {
       overflow-x: auto;
       overflow-y: hidden; }
     .map__image {
       display: none;
       position: relative;
+      padding-bottom: 50px;
       min-width: 1200px;
       top: 0;
       width: 1200px;
-      height: auto; }
+      height: auto;
+      margin-top: -11%; }
       .map__image--mob {
         display: block; }
 
