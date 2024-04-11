@@ -180,7 +180,12 @@ $(document).ready(function () {
     });
 
     if ($(window).width() < 1366) {
-        $(".map__container").scrollbar().parent().addClass("scrollbar-inner");
+        if ($(".map__container").length) {
+            $(".map__container")
+                .scrollbar()
+                .parent()
+                .addClass("scrollbar-inner");
+        }
     }
 
     //шаги

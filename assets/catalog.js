@@ -150,5 +150,60 @@ $(document).ready(function () {
         });
     });
 
-    Fancybox.bind("[data-fancybox]", {});
+    const furniture = $(".furniture");
+    if (furniture.length) {
+        const furnitureSlider = new Swiper(".furniture-slider", {
+            slidesPerView: 1,
+            loop: true,
+            navigation: {
+                nextEl: ".furniture__right",
+                prevEl: ".furniture__left",
+            },
+            pagination: {
+                clickable: true,
+                el: ".furniture-slider .swiper__pagination",
+            },
+        });
+
+        const swipers = document.querySelectorAll(
+            ".furniture-gallery__box-slider"
+        );
+        for (let i = 0; i < swipers.length; i++) {
+            const swiper = swipers[i];
+            new Swiper(swiper, {
+                loop: true,
+                pagination: {
+                    el: swiper.querySelector(".swiper__pagination"),
+                },
+            });
+        }
+    }
+
+    $(".furniture-video__play").on("click", function (e) {
+        e.preventDefault();
+        let container = $(this).closest(".furniture-video");
+        container.find(".furniture-video__cover").hide();
+        container.find("iframe").show();
+    });
+
+    $(".furniture-gallery__item").on("click", function (e) {
+        e.preventDefault();
+        $(".furniture-gallery__item").removeClass(
+            "furniture-gallery__item--active"
+        );
+        $(this).addClass("furniture-gallery__item--active");
+        let navId = $(this).attr("data-id");
+        $(".furniture-gallery__tab").hide();
+
+        $(".furniture-gallery__tab").each(function () {
+            let tabId = $(this).attr("data-id");
+            if (tabId == navId) {
+                $(this).show();
+            }
+        });
+    });
+
+    if ($(".product-main").length) {
+        Fancybox.bind("[data-fancybox]", {});
+    }
 });

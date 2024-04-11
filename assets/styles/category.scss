@@ -846,3 +846,541 @@
         margin: 0;
     }
 }
+
+.furniture {
+    .about {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .about__title {
+        max-width: 100%;
+    }
+    .about__description {
+        color: #5c6467;
+    }
+
+    .production__swiper-nav-item {
+        top: calc(50% - 28px);
+    }
+}
+
+.furniture-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.furniture-group {
+    width: 42.169%;
+}
+
+.furniture-slider {
+    width: 49.398%;
+    overflow: hidden;
+    position: relative;
+}
+
+.furniture__slide {
+    position: relative;
+    width: 100%;
+    height: 424px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+.furniture__left {
+    left: 20px;
+}
+
+.furniture__right {
+    right: 20px;
+    transform: rotate(180deg);
+}
+
+.furniture-video {
+    position: relative;
+    border-radius: 8px;
+    padding-bottom: 40.354%;
+    margin-bottom: 80px;
+    width: 100%;
+    &__cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+
+    &__play {
+        position: absolute;
+        z-index: 20;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.64);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 8px;
+        display: none;
+    }
+}
+
+.furniture-catalog {
+    background: #f4f4f4;
+    padding: 80px 0;
+    .title {
+        max-width: 800px;
+    }
+}
+
+.furniture-catalog__item-btn {
+    padding: 12px 20px;
+}
+
+.furniture-catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.furniture-catalog__item {
+    background: #fff;
+    border-radius: 8px;
+}
+
+.furniture-catalog__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    img {
+        height: 320px;
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+        margin: 0 auto 24px;
+    }
+}
+
+.furniture-catalog__item-info {
+    padding: 0 24px 24px;
+}
+
+.furniture-catalog__item-title {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 12px;
+}
+
+.furniture-catalog__item-desc {
+    font-size: 16px;
+    line-height: 130%;
+    margin-bottom: 16px;
+    color: #5c6467;
+}
+
+.btn-holder {
+    text-align: center;
+}
+
+.furniture-gallery {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .title {
+        max-width: 675px;
+    }
+}
+
+.furniture-gallery__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.furniture-gallery__item {
+    transition: 300ms ease all;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    font-size: 20px;
+    line-height: 120%;
+    color: #b5babc;
+    &:hover {
+        color: #232729;
+    }
+
+    &--active {
+        border-color: #ea570f;
+        color: #232729;
+    }
+}
+
+.furniture-gallery__box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 16px;
+        width: 32.531%;
+        &:nth-child(1) {
+            width: 24.097%;
+        }
+        &:nth-child(3) {
+            width: 24.097%;
+        }
+        &:nth-child(2) {
+            width: 49.398%;
+        }
+    }
+}
+
+.furniture-gallery__box-slider {
+    display: none;
+}
+
+.furniture-gallery__tab {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+}
+
+.furniture-steps {
+    padding: 80px 0;
+    background: #f4f4f4;
+    .step {
+        margin-top: 0;
+    }
+}
+
+.furniture-presentation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 48px;
+    }
+    .desc {
+        max-width: 33.5%;
+    }
+}
+
+.furniture-presentation-group {
+    max-width: 50%;
+}
+
+.furniture-presentation__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+
+.furniture-presentation__item {
+    position: relative;
+    border-radius: 8px;
+    height: 424px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 8px;
+    }
+
+    .btn-arrow {
+        position: relative;
+        z-index: 2;
+        padding: 12px 20px;
+    }
+}
+
+.furniture-presentation__label {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    border-radius: 8px 0;
+    padding: 12px;
+    background: #ea570f;
+    font-size: 16px;
+    line-height: 130%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.furniture-presentation__item-title {
+    position: relative;
+    z-index: 2;
+    font-size: 24px;
+    line-height: 120%;
+    color: #fff;
+}
+
+.furniture-presentation__item-desc {
+    font-size: 14px;
+    line-height: 120%;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin: 8px 0 16px;
+}
+
+.furniture {
+    .production {
+        margin-top: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .seo-text {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .furniture-catalog__item img {
+        height: 240px;
+    }
+    .furniture-gallery__header {
+        flex-wrap: wrap;
+    }
+    .furniture-presentation__item {
+        height: 350px;
+    }
+}
+
+@media (max-width: 989px) {
+    .furniture-info {
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
+    .furniture-group {
+        width: 100%;
+    }
+    .furniture-slider {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .furniture-video {
+        padding-bottom: 58.89%;
+    }
+    .furniture-catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .furniture-catalog__item img {
+        height: 260px;
+    }
+    .furniture-gallery__box img:nth-child(1) {
+        width: 34.445%;
+    }
+    .furniture-gallery__box img {
+        height: 360px;
+        border-radius: 8px;
+        width: 48.89%;
+    }
+    .furniture-gallery__box img:nth-child(2) {
+        width: 63.334%;
+    }
+    .furniture-gallery__box img:nth-child(3) {
+        width: 63.334%;
+    }
+    .furniture-gallery__box img:nth-child(4) {
+        width: 34.445%;
+    }
+
+    .furniture-presentation__header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+    .furniture-presentation-group {
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+    .furniture-presentation .desc {
+        max-width: 100%;
+    }
+    .furniture-presentation__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .furniture-presentation__item {
+        height: 424px;
+    }
+}
+
+.furniture {
+    .swiper__pagination {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .furniture .about {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .furniture .production__swiper-nav-item {
+        display: none;
+    }
+    .furniture {
+        .swiper__pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 16px;
+            .swiper-pagination-bullet {
+                width: 16px;
+                height: 16px;
+                background: none;
+                border: 2px solid #b5babc;
+                opacity: 1;
+                margin: 0 4px;
+                &-active {
+                    border-color: #ea570f;
+                    background: #ea570f;
+                }
+            }
+        }
+    }
+    .furniture-info {
+        padding-bottom: 40px;
+    }
+    .furniture-video {
+        padding-bottom: 54.89%;
+        margin-bottom: 64px;
+    }
+    .furniture-catalog__grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+    }
+    .furniture-catalog__item img {
+        height: 236px;
+        margin-bottom: 16px;
+    }
+    .furniture-catalog__item-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    .furniture-catalog__item-desc {
+        font-size: 14px;
+    }
+    .furniture-catalog__item-info {
+        width: 100%;
+        padding: 0 16px 16px;
+    }
+    .furniture-catalog__item-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .furniture-catalog {
+        padding: 48px 0;
+    }
+    .furniture-gallery__header {
+        flex-wrap: nowrap;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    }
+    .furniture-gallery__box {
+        display: none;
+    }
+    .furniture-gallery__item {
+        flex-shrink: 0;
+        font-size: 18px;
+    }
+    .furniture-gallery__box-slider {
+        display: block;
+        overflow: hidden;
+        .swiper-slide {
+            height: 440px;
+            object-fit: cover;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+    }
+    .furniture-steps {
+        padding: 48px 0;
+    }
+    .furniture-presentation,
+    .furniture .production {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .furniture-presentation__item {
+        height: 400px;
+    }
+    .furniture-presentation__item-title {
+        font-size: 20px;
+    }
+    .furniture-presentation__item .btn-arrow {
+        width: 100%;
+        justify-content: center;
+    }
+    .furniture .seo-text {
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width: 479px) {
+    .furniture__slide {
+        height: 360px;
+    }
+    .furniture-video {
+        padding-bottom: 75%;
+    }
+    .furniture-video__play {
+        width: 64px;
+        height: 64px;
+        svg {
+            width: 24px;
+        }
+    }
+}
