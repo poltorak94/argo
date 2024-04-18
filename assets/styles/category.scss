@@ -1384,3 +1384,18 @@
         }
     }
 }
+
+.furniture__images {
+    display: none;
+}
+
+.fancybox__caption {
+    font-size: 32px;
+
+    @media (max-width: 989px) {
+        font-size: 24px;
+    }
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}

@@ -1031,5 +1031,16 @@
     height: 64px; }
     .furniture-video__play svg {
       width: 24px; } }
+.furniture__images {
+  display: none; }
+
+.fancybox__caption {
+  font-size: 32px; }
+  @media (max-width: 989px) {
+    .fancybox__caption {
+      font-size: 24px; } }
+  @media (max-width: 767px) {
+    .fancybox__caption {
+      font-size: 16px; } }
 
 /*# sourceMappingURL=category.css.map */

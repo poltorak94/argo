@@ -203,7 +203,5 @@ $(document).ready(function () {
         });
     });
 
-    if ($(".product-main").length) {
-        Fancybox.bind("[data-fancybox]", {});
-    }
+    Fancybox.bind("[data-fancybox]", {});
 });
