@@ -203,5 +203,13 @@ $(document).ready(function () {
         });
     });
 
-    Fancybox.bind("[data-fancybox]", {});
+    if ($(".product").length) {
+        Fancybox.bind("[data-fancybox]", {});
+    }
+
+    if ($(".furniture").length) {
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: false,
+        });
+    }
 });
