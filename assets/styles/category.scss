@@ -1399,3 +1399,43 @@
         font-size: 16px;
     }
 }
+
+.furniture .hero--p::before {
+    content: none;
+}
+
+.furniture .hero--p {
+    height: 784px;
+    padding-bottom: 0;
+    @media (max-width: 989px) {
+        height: 880px;
+    }
+    @media (max-width: 767px) {
+        height: 640px;
+        .hero__swiper-wrapper-slide-text {
+            padding-bottom: 32px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .btn-holder {
+        .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .furniture {
+        .production__title {
+            margin-bottom: 24px;
+        }
+        .production__group {
+            margin-top: 24px;
+        }
+        .production__btns {
+            margin-top: 16px;
+            padding-top: 0;
+        }
+    }
+}

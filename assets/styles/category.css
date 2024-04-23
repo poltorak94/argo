@@ -1043,4 +1043,32 @@
     .fancybox__caption {
       font-size: 16px; } }
 
+.furniture .hero--p::before {
+  content: none; }
+
+.furniture .hero--p {
+  height: 784px;
+  padding-bottom: 0; }
+  @media (max-width: 989px) {
+    .furniture .hero--p {
+      height: 880px; } }
+  @media (max-width: 767px) {
+    .furniture .hero--p {
+      height: 640px; }
+      .furniture .hero--p .hero__swiper-wrapper-slide-text {
+        padding-bottom: 32px; } }
+
+@media (max-width: 767px) {
+  .btn-holder .btn {
+    width: 100%;
+    justify-content: center; }
+
+  .furniture .production__title {
+    margin-bottom: 24px; }
+  .furniture .production__group {
+    margin-top: 24px; }
+  .furniture .production__btns {
+    margin-top: 16px;
+    padding-top: 0; } }
+
 /*# sourceMappingURL=category.css.map */

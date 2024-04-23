@@ -5,10 +5,10 @@ $(document).ready(function () {
     //main slider
     const heroSwiper = new Swiper(".hero__swiper", {
         loop: true,
-        autoplay: {
-            delay: 10000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 10000,
+        //     disableOnInteraction: false,
+        // },
         pagination: {
             clickable: true,
             el: ".hero .slider-pagination__items",
