@@ -981,8 +981,7 @@
     scrollbar-width: none; }
 
   .furniture-gallery__header::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    width: 0px;
     background: transparent; }
 
   .furniture-gallery__box {
