@@ -1324,11 +1324,11 @@
         overflow: auto;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        &::-webkit-scrollbar {
-            width: 0;
-            height: 0;
-            background: transparent;
-        }
+    }
+    .furniture-gallery__header::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+        background: transparent;
     }
     .furniture-gallery__box {
         display: none;
