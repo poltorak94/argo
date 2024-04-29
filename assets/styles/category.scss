@@ -1464,14 +1464,17 @@
 @media (max-width: 1919px) {
     .product-button-holder {
         gap: 20px;
-        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 1199px) {
+    .product-button-holder {
+        flex-direction: column;
+    }
     .product-main-button {
         width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .product-button-desc {
         font-size: 16px;
@@ -1482,7 +1485,6 @@
 @media (max-width: 767px) {
     .product-button-holder {
         padding: 16px;
-        flex-direction: column;
         width: 100%;
         gap: 16px;
     }

@@ -1503,7 +1503,8 @@ main {
   width: 2px;
   background: #e6ecef;
   margin: 8px 0;
-  transition: 300ms ease all; }
+  transition: 300ms ease all;
+  min-height: 15px; }
 .steps__title {
   font-size: 20px;
   margin-bottom: 30px;
