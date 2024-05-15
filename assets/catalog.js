@@ -212,4 +212,32 @@ $(document).ready(function () {
             Thumbs: false,
         });
     }
+
+    $(".services-nav__item").on("click", function (e) {
+        e.preventDefault();
+        $(".services-nav__item").removeClass("services-nav__item--active");
+        $(this).addClass("services-nav__item--active");
+
+        let navId = $(this).attr("data-id");
+        $(".services-tab").hide();
+
+        $(".services-tab").each(function () {
+            let tabId = $(this).attr("data-id");
+            if (tabId == navId) {
+                $(this).show();
+            }
+        });
+    });
+
+    $(".production-slider").each(function (i) {
+        i++;
+        var i = new Swiper(this, {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: $(this).parent().find(".furniture__right")[0],
+                prevEl: $(this).parent().find(".furniture__left")[0],
+            },
+        });
+    });
 });
