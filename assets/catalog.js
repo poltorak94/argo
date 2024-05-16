@@ -151,7 +151,7 @@ $(document).ready(function () {
     });
 
     const furniture = $(".furniture");
-    if (furniture.length) {
+    if (furniture.length || $(".own-production").length) {
         const furnitureSlider = new Swiper(".furniture-slider", {
             slidesPerView: 1,
             loop: true,
@@ -173,6 +173,7 @@ $(document).ready(function () {
             new Swiper(swiper, {
                 loop: true,
                 pagination: {
+                    clickable: true,
                     el: swiper.querySelector(".swiper__pagination"),
                 },
             });
@@ -219,12 +220,12 @@ $(document).ready(function () {
         $(this).addClass("services-nav__item--active");
 
         let navId = $(this).attr("data-id");
-        $(".services-tab").hide();
+        $(".services-tab").removeClass("services-tab--visible");
 
         $(".services-tab").each(function () {
             let tabId = $(this).attr("data-id");
             if (tabId == navId) {
-                $(this).show();
+                $(this).addClass("services-tab--visible");
             }
         });
     });
@@ -237,6 +238,17 @@ $(document).ready(function () {
             navigation: {
                 nextEl: $(this).parent().find(".furniture__right")[0],
                 prevEl: $(this).parent().find(".furniture__left")[0],
+            },
+            breakpoints: {
+                320: {
+                    pagination: {
+                        clickable: true,
+                        el: $(this).parent().find(".swiper__pagination")[0],
+                    },
+                },
+                768: {
+                    pagination: false,
+                },
             },
         });
     });
