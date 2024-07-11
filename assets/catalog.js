@@ -214,6 +214,11 @@ $(document).ready(function () {
         });
     }
 
+    if ($(".project-page").length) {
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: false,
+        });
+    }
     $(".services-nav__item").on("click", function (e) {
         e.preventDefault();
         $(".services-nav__item").removeClass("services-nav__item--active");

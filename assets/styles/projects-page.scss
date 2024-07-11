@@ -86,7 +86,7 @@
             padding: 16px;
             color: #fff;
             backdrop-filter: blur(16px);
-            background: rgba(16, 16, 16, 0.24);
+            // background: rgba(16, 16, 16, 0.75);
             transition: 300ms ease all;
 
             span {
@@ -166,5 +166,122 @@
 
     .projects-page .projects-item {
         padding-bottom: 87.5%;
+    }
+}
+
+.project-page {
+    padding-top: calc(104px - 32px);
+    padding-bottom: 80px;
+
+    @media (max-width: 479px) {
+        padding-top: 70px;
+    }
+
+    .projects__title {
+        margin-bottom: 48px;
+    }
+}
+
+.project__gallery-box {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 -16px 80px;
+
+    a {
+        display: inline-block;
+        border-radius: 8px;
+        margin: 0 8px 16px;
+        position: relative;
+        padding-bottom: 26.471%;
+
+        width: calc(33.3% - 16px);
+        &:nth-child(1) {
+            width: calc(50% - 16px);
+        }
+
+        &:nth-child(2) {
+            width: calc(50% - 16px);
+        }
+        &:nth-child(6) {
+            width: calc(50% - 16px);
+        }
+        &:nth-child(7) {
+            width: calc(50% - 16px);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+            display: block;
+        }
+    }
+}
+
+.projects-page__info {
+    max-width: 672px;
+    padding-bottom: 80px;
+    .title {
+        padding-bottom: 32px;
+    }
+}
+
+.projects-page__info-btns {
+    display: flex;
+    gap: 16px;
+}
+
+.projects-page__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 200ms ease all;
+    font-weight: 500;
+
+    &:hover {
+        color: #ea570f;
+    }
+}
+
+@media (max-width: 989px) {
+    .project__gallery-box a {
+        width: calc(50% - 16px);
+        padding-bottom: 47.9%;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects-page__info-btns {
+        flex-direction: column;
+        a {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .project-page .projects__title {
+        margin-bottom: 32px;
+    }
+
+    .project__gallery-box {
+        margin: 0 0 64px;
+    }
+
+    .project__gallery-box a {
+        width: 100% !important;
+        margin: 0 0 8px;
+        padding-bottom: 75%;
+    }
+
+    .projects-page__info {
+        padding-bottom: 64px;
     }
 }
