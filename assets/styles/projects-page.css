@@ -196,5 +196,23 @@
 
   .projects-page__info {
     padding-bottom: 64px; } }
+.own-production .projects-page {
+  padding-top: 0 !important;
+  margin-bottom: 80px; }
+  .own-production .projects-page__container {
+    padding-top: 80px; }
+  .own-production .projects-page .btn-holder {
+    margin-top: 0; }
+  .own-production .projects-page .title {
+    max-width: 675px;
+    margin-bottom: 32px; }
+
+@media (max-width: 479px) {
+  .own-production .projects-page__container {
+    padding-top: 56px;
+    padding-bottom: 56px; }
+
+  .own-production .projects-page {
+    margin-bottom: 64px; } }
 
 /*# sourceMappingURL=projects-page.css.map */
