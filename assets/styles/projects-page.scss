@@ -86,9 +86,11 @@
             padding: 16px;
             color: #fff;
             backdrop-filter: blur(16px);
-            // background: rgba(16, 16, 16, 0.75);
-            transition: 300ms ease all;
+            -webkit-backdrop-filter: blur(16px);
 
+            transition: 300ms ease all;
+            background-blend-mode: overlay;
+            background: rgba(0, 0, 0, 0.1);
             span {
                 display: block;
                 min-height: 58px;
