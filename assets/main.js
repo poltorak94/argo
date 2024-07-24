@@ -127,18 +127,18 @@ $(document).ready(function () {
     });
 
     //modal
-    $(".header__nav-callback, .production__order, .mob-block__callback").on(
-        "click",
-        function (e) {
-            e.preventDefault();
-            $(".modal--main").removeClass("modal--hidden");
-            $(".modal--main").arcticmodal({
-                afterClose: function (data, el) {
-                    $(".modal--main").addClass("modal--hidden");
-                },
-            });
-        }
-    );
+
+    $(
+        ".header__nav-callback, .production__order, .mob-block__callback, .project-page__main-btn"
+    ).on("click", function (e) {
+        e.preventDefault();
+        $(".modal--main").removeClass("modal--hidden");
+        $(".modal--main").arcticmodal({
+            afterClose: function (data, el) {
+                $(".modal--main").addClass("modal--hidden");
+            },
+        });
+    });
 
     $(".plan-modal").on("click", function (e) {
         e.preventDefault();

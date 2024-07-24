@@ -586,6 +586,121 @@
             </div>
         </footer>
 
+        <div class="modal modal--main modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 5L12 12M19 19L12 12M12 12L19 5L5 19"
+                        stroke="#B5BABC"
+                        stroke-width="2"
+                    />
+                </svg>
+            </a>
+            <form class="modal__form">
+                <div class="modal__title">Заказать проект</div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Имя</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Телефон</div>
+                        <input
+                            type="text"
+                            class="modal__form-input-field input-tel"
+                        />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Почта</div>
+                        <input type="text" class="modal__form-input-field" />
+                    </div>
+                </div>
+                <div class="modal__form-group">
+                    <div class="modal__form-input">
+                        <div class="modal__form-input-label">Комментарий</div>
+                        <textarea></textarea>
+                    </div>
+                </div>
+                <div class="catalog-form__files">
+                    <input type="file" class="catalog-form__file-input" />
+                    <a href="#" class="catalog-form__file-button">
+                        <svg
+                            width="12"
+                            height="13"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g clip-path="url(#clip0_1531_12)">
+                                <path
+                                    d="M1.5 1H7.707L10.5 3.793V6.5H9.5V5H6.5V2H2.5V11H6V12H1.5V1ZM7.5 2.207V4H9.293L7.5 2.207ZM10 7.5V9.5H12V10.5H10V12.5H9V10.5H7V9.5H9V7.5H10Z"
+                                    fill="#043F5C"
+                                ></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1531_12">
+                                    <rect
+                                        width="12"
+                                        height="12"
+                                        fill="white"
+                                        transform="translate(0 0.5)"
+                                    ></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Прикрепить файл
+                    </a>
+                    <div class="catalog-form__files-select">
+                        <span></span>
+                        <a
+                            href="#"
+                            class="catalog-form__files-change-btn change-file"
+                        >
+                            Заменить
+                        </a>
+                        <a
+                            href="#"
+                            class="catalog-form__files-change-btn remove-file"
+                        >
+                            Удалить
+                        </a>
+                    </div>
+                </div>
+
+                <div class="modal__form-group">
+                    <label class="custom-checkbox">
+                        <input
+                            type="checkbox"
+                            checked
+                            class="custom-checkbox__field"
+                        />
+                        <span class="custom-checkbox__checkmark"></span>
+                        <span class="custom-checkbox__text">
+                            Я даю согласие на
+                            <a href="#" target="_blank">
+                                обработку персональных данных</a
+                            >
+                        </span>
+                    </label>
+                </div>
+                <input
+                    type="submit"
+                    value="Получить консультацию"
+                    class="modal__form-submit btn"
+                />
+            </form>
+        </div>
+
         <div class="mob-overlay"></div>
         <script src="./assets/plagins/jquery/jquery-3.6.4.min.js"></script>
         <script src="./assets/plagins/wow/wow.min.js"></script>

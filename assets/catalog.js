@@ -30,12 +30,14 @@ $(document).ready(function () {
         var filename = $(this).val().split("\\").pop();
 
         $(this).closest(".catalog-form").addClass("catalog-form--change");
+        $(this).closest(".modal__form").addClass("modal__form--change");
         $(".catalog-form__files-select span").text(filename);
     });
 
     $(".remove-file").on("click", function (e) {
         e.preventDefault();
         $(this).closest(".catalog-form").removeClass("catalog-form--change");
+        $(this).closest(".modal__form").removeClass("modal__form--change");
     });
 
     $(".catalog-form__submit").on("click", function (e) {

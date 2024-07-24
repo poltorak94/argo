@@ -332,5 +332,38 @@
     max-height: 400px; }
     .catalog .hero--p .hero__title {
       margin-bottom: 0; } }
+.modal__form-input textarea {
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #232729;
+  padding: 16px;
+  min-height: 140px;
+  border: 1px solid #b5babc; }
+
+.modal__form .catalog-form__files-select {
+  display: none; }
+
+.modal__form .catalog-form__file-button {
+  transition: 300ms ease all; }
+  .modal__form .catalog-form__file-button:hover {
+    border-color: #ea570f; }
+
+.modal__form--change .catalog-form__file-button {
+  display: none; }
+.modal__form--change .catalog-form__files-select {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+  .modal__form--change .catalog-form__files-select span {
+    font-size: 12px;
+    display: inline-flex;
+    margin-right: 10px; }
+  .modal__form--change .catalog-form__files-select .catalog-form__files-change-btn {
+    font-size: 14px;
+    text-decoration: underline; }
+    .modal__form--change .catalog-form__files-select .catalog-form__files-change-btn:hover {
+      text-decoration: none; }
 
 /*# sourceMappingURL=catalog.css.map */
