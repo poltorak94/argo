@@ -355,11 +355,13 @@
 .modal__form--change .catalog-form__files-select {
   display: flex;
   align-items: center;
-  gap: 10px; }
+  gap: 10px;
+  flex-wrap: wrap; }
   .modal__form--change .catalog-form__files-select span {
     font-size: 12px;
     display: inline-flex;
-    margin-right: 10px; }
+    margin-right: 10px;
+    word-wrap: break-word; }
   .modal__form--change .catalog-form__files-select .catalog-form__files-change-btn {
     font-size: 14px;
     text-decoration: underline; }

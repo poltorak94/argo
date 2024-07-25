@@ -518,10 +518,12 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        flex-wrap: wrap;
         span {
             font-size: 12px;
             display: inline-flex;
             margin-right: 10px;
+            word-wrap: break-word;
         }
 
         .catalog-form__files-change-btn {
