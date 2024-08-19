@@ -153,7 +153,11 @@ $(document).ready(function () {
     });
 
     const furniture = $(".furniture");
-    if (furniture.length || $(".own-production").length) {
+    if (
+        furniture.length ||
+        $(".own-production").length ||
+        $(".design-page-single").length
+    ) {
         const furnitureSlider = new Swiper(".furniture-slider", {
             slidesPerView: 1,
             loop: true,

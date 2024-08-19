@@ -1495,3 +1495,60 @@
     height: 280px; } }
 
 /*# sourceMappingURL=category.css.map */
+.design-page .production-category{
+  padding-top: 0;
+}
+
+.design-page-single .about__description{
+  color: #5C6467;
+}
+
+
+
+.design-page-single .about__description p{
+  padding-bottom: 20px;
+}
+
+.design-page-single .furniture-info{
+  margin-top: 80px;
+}
+
+.design-page-single .projects--p{
+  padding-top: 0;
+}
+
+.design-page-single .about{
+  padding-top: 80px;
+}
+
+.design-page-single .catalog-form{
+  margin-top: 0;
+}
+
+.design-page-single .seo-text{
+  margin-top: 80px;
+}
+
+@media (max-width: 767px){
+  .design-page-single .furniture-info{
+    margin-top: 64px;
+  }
+
+  .design-page-single .about{
+    padding-top: 64px;
+  }
+
+  .design-page-single .design-main{
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
+
+  .design-page-single .furniture-gallery{
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .design-page-single .seo-text{
+    margin-top: 64px;
+  }
+}
