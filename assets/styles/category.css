@@ -1552,3 +1552,16 @@
     margin-top: 64px;
   }
 }
+
+.design-page .production-category__item img{
+  transition: 500ms ease all;
+}
+
+.design-page .production-category__item{
+  overflow: hidden;
+}
+
+.design-page .production-category__item:hover img{
+  transform: scale(1.2);
+}
+
