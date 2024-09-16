@@ -220,6 +220,12 @@ $(document).ready(function () {
         });
     }
 
+    if ($(".post").length) {
+        Fancybox.bind("[data-fancybox]", {
+            Thumbs: false,
+        });
+    }
+
     if ($(".project-page").length) {
         Fancybox.bind("[data-fancybox]", {
             Thumbs: false,
