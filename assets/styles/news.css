@@ -1,0 +1,121 @@
+.news {
+    padding-top: calc(104px - 32px);
+}
+
+.news-container {
+    padding: 32px 0 80px;
+    background: #f4f4f4;
+    margin-top: 32px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 32px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 24px;
+}
+
+.news-item img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: 400ms linear all;
+}
+
+.news-item__date {
+    padding: 0 20px 8px;
+    color: #5C6467;
+    font-size: 12px;
+    line-height: 120%;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
+
+.news-item__title {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 120%;
+    min-height: 72px;
+    max-height: 72px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: 300ms ease all;
+}
+
+.news .pagination {
+    margin-top: 32px;
+}
+
+.news-item__img-holder {
+    overflow: hidden;
+    height: 240px;
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.news-item:hover img {
+    transform: scale(1.2);
+}
+
+
+.news-item:hover .news-item__title {
+    color: #EA570F;
+}
+
+@media (max-width: 989px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .news {
+        padding-top: 60px;
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-item__title {
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 479px) {
+    .news-item__img-holder {
+        height: 144px;
+        margin-bottom: 16px;
+    }
+
+    .news-item__date {
+        padding: 0 16px;
+    }
+
+    .news-item__title {
+        padding: 4px 16px 0;
+        font-size: 18px;
+    }
+
+    .news-item {
+        padding-bottom: 16px;
+    }
+}
