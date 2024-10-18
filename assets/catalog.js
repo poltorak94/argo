@@ -269,4 +269,20 @@ $(document).ready(function () {
             },
         });
     });
+
+    //контакты
+    $('.contacts__link').on('click', function(e){
+        e.preventDefault();
+        let navId = $(this).attr('data-id');
+        $('.contacts__link').removeClass('contacts__link--active');
+        $(this).addClass('contacts__link--active');
+        $('.contacts__tab').addClass('contacts__tab--hidden');
+
+        $('.contacts__tab').each(function(){
+            let tabId = $(this).attr('data-id');
+            if (tabId == navId){
+                $(this).removeClass('contacts__tab--hidden');
+            }
+        })
+    })
 });

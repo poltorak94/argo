@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/styles/normalize.css" />
+        <link rel="stylesheet" href="./assets/styles/fonts.css" />
+        <link
+            rel="stylesheet"
+            href="./assets/plagins/swiper/swiper-bundle.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plagins/animate/animate.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plagins/scroll/jquery.scrollbar.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plagins/modal/jquery.arcticmodal-0.3.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/plagins/twenty/twentytwenty.css"
+        />
+        <link rel="stylesheet" href="./assets/styles/main.css" />
+        <link rel="stylesheet" href="./assets/styles/catalog.css" />
+        <link rel="stylesheet" href="./assets/styles/category.css" />
+        <title>Argo</title>
+    </head>
+
+    <body>
+        <header class="header header--black">
+            <div class="header__container container">
+                <nav class="header__nav">
+                    <div class="header__nav-items header__nav-items--first">
+                        <a href="#" class="header__nav-logo">
+                            <svg
+                                width="144"
+                                height="40"
+                                viewBox="0 0 144 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    class="color-line"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M80.1304 25.4919L81.2365 27.6602L84.6923 34.4339H79.8013H79.0321L75.1104 26.7652C74.6959 26.7841 74.2662 26.792 73.8186 26.792H59.3334V34.4656H53.9652V26.792H44.5292L39.3873 34.4339L33.3926 34.4211L38.5383 26.792H34.068L37.1245 22.2566H41.5972L53.3386 4.84847H59.3334V22.2566H63.6395V9.45296V9.44911V4.84855V4.81112H73.5548C74.6305 4.81112 75.4873 4.77112 76.5634 4.94432C81.7487 5.77945 85.7125 10.3327 85.7125 15.8246C85.7125 18.9561 84.4238 21.7826 82.3547 23.7884C81.6083 24.512 80.8771 25.0674 80.1304 25.4919ZM47.5808 22.2566H53.9652V12.7683L47.5808 22.2566ZM69.0078 22.2566H72.5683C74.7822 22.2566 76.43 22.2347 78.2401 20.7689C79.671 19.6102 80.588 17.8259 80.588 15.8246C80.588 13.6032 79.4583 11.6494 77.7498 10.5212C76.3879 9.62172 75.1538 9.44911 73.5579 9.44911H69.0033L69.0078 9.45296V22.2566ZM69.0078 26.7921V34.4656H63.6395V26.7921H69.0078Z"
+                                    fill="white"
+                                />
+                                <path
+                                    class="color-line"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M28.4478 26.7732V33.5393L27.5341 34.4656H5.02599L4.1123 33.5393V26.7732H28.4478ZM7.52397 32.2968V30.8253H8.29328L9.43633 32.2968H10.372L9.1618 30.7421C9.67164 30.5966 9.97411 30.217 9.97411 29.7334C9.97411 29.4164 9.84959 29.1577 9.61001 28.9587C9.36795 28.7577 9.03813 28.6571 8.62403 28.6571H6.7173V32.2968H7.52397ZM7.52397 29.3123H8.57902C8.94324 29.3123 9.1618 29.4787 9.1618 29.7542C9.1618 30.0403 8.94304 30.1962 8.57902 30.1962H7.52397V29.3123ZM13.8337 32.2968V31.6261H11.6075V30.7828H13.1858V30.1226H11.6075V29.3278H13.7721V28.6571H10.8009V32.2968H13.8337ZM14.2081 29.3278H15.4463V32.2968H16.253V29.3278H17.4969V28.6571H14.2081V29.3278ZM18.0339 32.2968L18.4205 31.4544H20.0788L20.4654 32.2968H21.3226L19.6419 28.6363H18.8687L17.1878 32.2968H18.0339ZM19.2497 29.5722L19.8211 30.8357H18.6726L19.2497 29.5722ZM22.575 32.2968V28.6571H21.7738V32.2968H22.575ZM26.4379 32.2968V31.6261H24.2662V28.6571H23.4594V32.2968H26.4379Z"
+                                    fill="white"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M17.4054 4.89258H27.5342L28.4478 5.81887V22.9957H7.59278L16.3524 10.0208L20.849 16.6814H14.9795L12.4293 20.4588C17.1489 20.4588 21.8685 20.4588 26.588 20.4588L27.1925 19.3893L17.4054 4.89258ZM5.02599 4.89258H15.2994L5.51225 19.3893L4.1123 21.4629V5.81887L5.02599 4.89258Z"
+                                    fill="#EA570F"
+                                />
+                                <path
+                                    class="color-line"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M111.308 18.333H111.313V33.1449L111.129 33.2174C110.623 33.4174 110.093 33.5753 109.57 33.7188C108.876 33.9084 108.168 34.0531 107.461 34.1793C106.668 34.3207 105.868 34.4261 105.068 34.5077C104.255 34.5908 103.438 34.6396 102.621 34.6396C100.47 34.6396 98.2591 34.3724 96.2269 33.5948C94.516 32.9398 92.9426 31.9888 91.6397 30.6342C90.3983 29.3434 89.4845 27.8118 88.8856 26.0827C88.2417 24.224 87.9795 22.2621 87.9795 20.2884C87.9795 18.8452 88.1302 17.4085 88.4598 16.007C88.7712 14.6821 89.2393 13.4099 89.8762 12.2214C90.4949 11.0674 91.257 10.0146 92.1439 9.0764C93.046 8.12315 94.0719 7.31688 95.189 6.66822C96.3648 5.98537 97.621 5.48998 98.9219 5.1498C100.34 4.78027 101.804 4.62134 103.263 4.62134C104.566 4.62134 105.871 4.71354 107.157 4.92852C108.168 5.09703 109.222 5.3244 110.188 5.68684L110.376 5.75721V10.7485L110.011 10.6284C108.992 10.296 107.951 10.041 106.898 9.86486C105.85 9.68998 104.79 9.6007 103.728 9.6007C102.367 9.6007 101.021 9.80567 99.7305 10.2718C98.5396 10.7018 97.4646 11.3517 96.5341 12.2493C95.6014 13.1487 94.9059 14.2426 94.4082 15.4667C93.8414 16.8621 93.6277 18.3928 93.6313 19.9043C93.6384 22.5398 94.1608 25.3321 96.0205 27.2333C97.8408 29.0947 100.332 29.6591 102.792 29.6591C103.362 29.6591 103.932 29.6287 104.499 29.5671C104.941 29.5188 105.388 29.4606 105.826 29.3732V23.2828H99.7889V18.3287H111.313L111.308 18.333Z"
+                                    fill="white"
+                                />
+                                <path
+                                    class="color-line"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M140.211 19.63C140.211 21.6798 139.956 23.7267 139.328 25.6711C138.76 27.4316 137.903 29.0469 136.719 30.4266C135.543 31.7959 134.122 32.8239 132.51 33.5385C130.722 34.3306 128.793 34.6397 126.862 34.6397C124.932 34.6397 123.002 34.3306 121.214 33.5385C119.602 32.8239 118.181 31.7959 117.005 30.4266C115.821 29.0473 114.971 27.4305 114.403 25.6711C113.775 23.7259 113.513 21.6817 113.513 19.63C113.513 17.5784 113.776 15.5345 114.403 13.5889C114.971 11.8296 115.821 10.2139 117.005 8.83419C118.181 7.46456 119.601 6.4361 121.214 5.7212C123.002 4.92909 124.932 4.62109 126.862 4.62109C128.792 4.62109 130.722 4.92909 132.51 5.7212C134.123 6.4361 135.543 7.4642 136.719 8.83419C137.903 10.2143 138.76 11.828 139.328 13.5889C139.956 15.5335 140.211 17.5803 140.211 19.63ZM134.71 19.63C134.71 18.1428 134.559 16.6145 134.112 15.1956C133.754 14.0593 133.233 12.9718 132.473 12.0655C131.792 11.2524 130.973 10.6275 130.014 10.2143C129.011 9.78199 127.945 9.60094 126.862 9.60094C125.779 9.60094 124.713 9.78199 123.71 10.2143C122.75 10.6275 121.933 11.2521 121.251 12.0655C120.491 12.9718 119.971 14.0593 119.613 15.1956C119.166 16.6145 119.014 18.1428 119.014 19.63C119.014 21.1154 119.166 22.6474 119.613 24.0645C119.971 25.2 120.489 26.2823 121.25 27.1864C121.934 27.9976 122.752 28.6229 123.71 29.0391C124.713 29.4747 125.779 29.6587 126.862 29.6587C127.945 29.6587 129.011 29.4747 130.014 29.0391C130.971 28.6229 131.791 27.9972 132.474 27.1864C133.235 26.2823 133.754 25.2 134.112 24.0645C134.558 22.6478 134.71 21.115 134.71 19.63Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </a>
+                        <div class="header__main-menu">
+                            <div class="header__main-menu-container">
+                                <svg
+                                    class="header__mob-logo"
+                                    width="208"
+                                    height="46"
+                                    viewBox="0 0 208 46"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_69_3381)">
+                                        <path
+                                            d="M115.983 31.9821L117.671 35.3048L122.943 45.6848H115.482H114.308L108.324 33.9334C107.691 33.9622 107.036 33.9743 106.353 33.9743H84.2529V45.7334H76.0625V33.9743H61.666L53.8208 45.6847L44.6746 45.6651L52.5254 33.9743H45.7051L50.3684 27.0246H57.1925L75.1067 0.348494H84.2529V27.0246H90.8229V7.40432V7.39846V0.348613V0.291279H105.951C107.592 0.291279 108.899 0.229972 110.541 0.495358C118.453 1.77514 124.5 8.75239 124.5 17.1681C124.5 21.9669 122.534 26.2981 119.377 29.3717C118.238 30.4805 117.123 31.3317 115.983 31.9821ZM66.3218 27.0246H76.0625V12.4847L66.3218 27.0246ZM99.0138 27.0246H104.445C107.823 27.0246 110.337 26.9909 113.099 24.7447C115.283 22.9692 116.682 20.2349 116.682 17.1681C116.682 13.7641 114.958 10.7701 112.351 9.04124C110.273 7.66297 108.391 7.39846 105.956 7.39846H99.0062L99.0138 7.40432V27.0246ZM99.0138 33.9746V45.7334H90.8229V33.9746H99.0138Z"
+                                            fill="#043F5C"
+                                        />
+                                        <path
+                                            d="M37.1291 33.9458V44.3141L35.7352 45.7335H1.39403L0 44.3141V33.9458H37.1291ZM5.20528 42.41V40.1551H6.379L8.12301 42.41H9.55049L7.70413 40.0278C8.482 39.8047 8.94349 39.223 8.94349 38.4819C8.94349 37.9962 8.75351 37.5997 8.38799 37.2948C8.01867 36.9868 7.51544 36.8327 6.88364 36.8327H3.97449V42.41H5.20528ZM5.20528 37.8366H6.81495C7.37067 37.8366 7.70413 38.0916 7.70413 38.5139C7.70413 38.9522 7.37034 39.191 6.81495 39.191H5.20528V37.8366ZM14.8321 42.41V41.3824H11.4356V40.0901H13.8437V39.0783H11.4356V37.8605H14.7381V36.8327H10.2049V42.41H14.8321ZM15.4034 37.8605H17.2926V42.41H18.5234V37.8605H20.4212V36.8327H15.4034V37.8605ZM21.2405 42.41L21.8304 41.1191H24.3605L24.9503 42.41H26.2582L23.6937 36.8008H22.5142L19.9496 42.41H21.2405ZM23.0954 38.235L23.9673 40.1711H22.215L23.0954 38.235ZM28.1689 42.41V36.8327H26.9465V42.41H28.1689ZM34.0626 42.41V41.3824H30.7493V36.8327H29.5182V42.41H34.0626Z"
+                                            fill="#043F5C"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M20.2815 0.416016H35.7352L37.1291 1.83535V28.1568H5.31016L18.6748 8.27431L25.5355 18.481H16.5802L12.6894 24.2694C19.89 24.2694 27.0908 24.2694 34.2916 24.2694L35.2139 22.6306L20.2815 0.416016ZM1.39392 0.416016H17.0682L2.13582 22.6306L0 25.8081V1.83535L1.39392 0.416016Z"
+                                            fill="#E95B21"
+                                        />
+                                        <path
+                                            d="M163.551 21.0121H163.559V43.7095L163.278 43.8206C162.505 44.1271 161.697 44.3691 160.899 44.589C159.839 44.8795 158.76 45.1012 157.681 45.2947C156.471 45.5113 155.251 45.6729 154.03 45.7978C152.79 45.9251 151.543 46 150.297 46C147.015 46 143.642 45.5905 140.541 44.399C137.93 43.3953 135.53 41.938 133.543 39.8621C131.648 37.8841 130.254 35.5372 129.34 32.8876C128.358 30.0393 127.958 27.0329 127.958 24.0085C127.958 21.7968 128.187 19.5953 128.691 17.4477C129.166 15.4173 129.88 13.468 130.852 11.6467C131.796 9.87825 132.958 8.26493 134.312 6.82733C135.688 5.36661 137.253 4.13111 138.957 3.13708C140.751 2.09069 142.668 1.33162 144.653 0.810254C146.817 0.244071 149.05 0.000488281 151.276 0.000488281C153.263 0.000488281 155.255 0.141805 157.217 0.471156C158.761 0.729459 160.367 1.07784 161.843 1.63319L162.129 1.74108V9.38955L161.572 9.20562C160.017 8.69621 158.429 8.30554 156.823 8.03563C155.223 7.76758 153.606 7.6308 151.986 7.6308C149.909 7.6308 147.856 7.94487 145.886 8.65913C144.07 9.31806 142.429 10.314 141.01 11.6895C139.587 13.0677 138.525 14.7439 137.767 16.6196C136.902 18.7579 136.575 21.1037 136.581 23.42C136.592 27.4585 137.389 31.7374 140.226 34.6507C143.003 37.5032 146.805 38.3681 150.557 38.3681C151.427 38.3681 152.298 38.3212 153.162 38.227C153.836 38.153 154.518 38.0638 155.187 37.9298V28.5971H145.976V21.0055H163.559L163.551 21.0121Z"
+                                            fill="#043F5C"
+                                        />
+                                        <path
+                                            d="M207.649 22.9995C207.649 26.1406 207.259 29.2771 206.301 32.2567C205.434 34.9545 204.128 37.4297 202.32 39.5441C200.526 41.6423 198.359 43.2177 195.898 44.3127C193.171 45.5264 190.227 46 187.282 46C184.337 46 181.392 45.5264 178.664 44.3127C176.204 43.2177 174.037 41.6423 172.243 39.5441C170.436 37.4304 169.14 34.9528 168.274 32.2567C167.315 29.2759 166.915 26.1434 166.915 22.9995C166.915 19.8556 167.316 16.7236 168.274 13.7421C169.14 11.0461 170.437 8.57034 172.243 6.45611C174.037 4.35727 176.204 2.78134 178.664 1.68582C181.392 0.472005 184.338 0 187.282 0C190.227 0 193.171 0.472005 195.898 1.68582C198.359 2.78134 200.526 4.35672 202.32 6.45611C204.128 8.571 205.434 11.0439 206.301 13.7421C207.259 16.722 207.649 19.8584 207.649 22.9995ZM199.256 22.9995C199.256 20.7205 199.025 18.3785 198.343 16.2042C197.797 14.4631 197.002 12.7965 195.843 11.4077C194.804 10.1618 193.555 9.20425 192.091 8.571C190.561 7.90853 188.935 7.63108 187.282 7.63108C185.629 7.63108 184.003 7.90853 182.472 8.571C181.008 9.20425 179.761 10.1612 178.721 11.4077C177.561 12.7965 176.768 14.4631 176.221 16.2042C175.54 18.3785 175.308 20.7205 175.308 22.9995C175.308 25.2757 175.541 27.6233 176.221 29.7947C176.768 31.5348 177.558 33.1933 178.719 34.5787C179.763 35.8217 181.012 36.7799 182.473 37.4178C184.003 38.0852 185.629 38.3674 187.282 38.3674C188.935 38.3674 190.561 38.0852 192.09 37.4178C193.551 36.7799 194.802 35.8212 195.844 34.5787C197.005 33.1933 197.797 31.5348 198.343 29.7947C199.024 27.624 199.256 25.2751 199.256 22.9995Z"
+                                            fill="#043F5C"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_69_3381">
+                                            <rect
+                                                width="208"
+                                                height="46"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <div
+                                    class="header__nav-item header__nav-item--dropdown"
+                                >
+                                    <div class="header__nav-item-title">
+                                        Услуги
+                                        <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M2 4L6 8L10 4"
+                                                stroke-width="1.33333"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="header__dropdown-menu">
+                                        <div
+                                            class="header__dropdown-menu-container"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                Проектирование и дизайн
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                Производство мебели
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                По направлениям
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__nav-item">
+                                    <a href="#" class="header__nav-item-title">
+                                        Проекты</a
+                                    >
+                                </div>
+                                <div
+                                    class="header__nav-item header__nav-item--dropdown"
+                                >
+                                    <div class="header__nav-item-title">
+                                        О компании
+                                        <svg
+                                            width="12"
+                                            height="12"
+                                            viewBox="0 0 12 12"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M2 4L6 8L10 4"
+                                                stroke-width="1.33333"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <div class="header__dropdown-menu">
+                                        <div
+                                            class="header__dropdown-menu-container"
+                                        >
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                Проектирование и дизайн
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                Производство мебели
+                                            </a>
+                                            <a
+                                                href="#"
+                                                class="header__dropdown-menu-item"
+                                            >
+                                                По направлениям
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__nav-item">
+                                    <a href="#" class="header__nav-item-title">
+                                        Контакты</a
+                                    >
+                                </div>
+                                <div class="mob-block">
+                                    <a
+                                        href="tel:+74953748472"
+                                        class="mob-block__tel"
+                                    >
+                                        +7 (495) 374-84-72
+                                    </a>
+                                    <div class="mob-block__item">
+                                        г. Москва, Щёлковское шоссе 100, к.5,
+                                        офис 706
+                                    </div>
+                                    <div class="mob-block__item">
+                                        Пн-пт: с 9:00 до 18:00
+                                    </div>
+                                    <a
+                                        href="mailto:bav@argo.studio"
+                                        class="mob-block__email"
+                                    >
+                                        bav@argo.studio
+                                    </a>
+                                    <a
+                                        href="mailto:bav@argo.studio"
+                                        class="mob-block__callback"
+                                    >
+                                        Заказ обратного звонка
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__nav-items">
+                        <a href="tel:+74953748472" class="header__nav-tel">
+                            <svg
+                                width="16"
+                                height="17"
+                                viewBox="0 0 16 17"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <g clip-path="url(#clip0_183_1133)">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M11.035 15.2554C10.075 15.22 7.35433 14.844 4.50499 11.9954C1.65633 9.14602 1.28099 6.42602 1.24499 5.46535C1.19166 4.00135 2.31299 2.57936 3.60833 2.02402C3.76431 1.95667 3.93513 1.93102 4.10401 1.94961C4.2729 1.96819 4.43405 2.03036 4.57166 2.13002C5.63833 2.90735 6.37433 4.08336 7.00633 5.00802C7.14538 5.21117 7.20484 5.45839 7.17336 5.70255C7.14189 5.94672 7.02169 6.17077 6.83566 6.33202L5.53499 7.29802C5.47215 7.3434 5.42792 7.41004 5.41051 7.48557C5.3931 7.5611 5.40369 7.64038 5.44033 7.70869C5.73499 8.24402 6.25899 9.04136 6.85899 9.64136C7.45966 10.2414 8.29433 10.8 8.86699 11.128C8.93879 11.1683 9.02331 11.1796 9.10316 11.1595C9.18302 11.1394 9.25214 11.0895 9.29633 11.02L10.143 9.73136C10.2987 9.52459 10.5283 9.38607 10.7838 9.34481C11.0393 9.30355 11.3008 9.36276 11.5137 9.51002C12.4517 10.1594 13.5463 10.8827 14.3477 11.9087C14.4554 12.0473 14.524 12.2123 14.5461 12.3864C14.5683 12.5606 14.5433 12.7375 14.4737 12.8987C13.9157 14.2007 12.5037 15.3094 11.035 15.2554Z"
+                                    />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_183_1133">
+                                        <rect
+                                            width="16"
+                                            height="16"
+                                            transform="translate(0 0.5)"
+                                        />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            +7 (495) 374-84-72
+                        </a>
+                        <a href="#" class="header__nav-callback"
+                            >Заказ обратного звонка</a
+                        >
+                    </div>
+                    <a href="#" class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="contacts">
+                <ul class="breadcrumbs container">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__item-link"> Главная </a>
+                    </li>
+                    <li class="breadcrumbs__item">Контакты</li>
+                </ul>
+                <h1 class="contacts__title title container">Контакты</h1>
+                <div class="contacts__container">
+                    <div class="container">
+                        <div class="contacts__inner">
+                            <div class="contacts__header">
+                                <a href="#" class="contacts__link contacts__link--active" data-id="1">Центральный офис</a>
+                                <a href="#" class="contacts__link" data-id="2">Склад и производство</a>
+                            </div>
+                            <div class="contacts__tab" data-id="1">
+                                <div class="contacts__info">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Адрес</div>
+                                        <div class="contacts__item-val">105523, г. Москва, Щёлковское шоссе 100 С3, офис 705</div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Время работы</div>
+                                        <div class="contacts__item-val">
+                                            пн-пт: с 9:00 до 18:00 <br>
+                                            сб-вс: выходной
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Телефон офиса</div>
+                                        <a href="tel:+74953748472" class="contacts__item-val">
+                                            +7 (495) 374-84-72
+                                        </a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Телефон офиса</div>
+                                        <a href="mailto:bav@argo.studio" class="contacts__item-val">
+                                            bav@argo.studio
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts__map">
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4de8be9ba9f9e229f25ecf5e0c4cd471e6a8e9141c530e3ffecca73477de6317&amp;source=constructor" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                            <div class="contacts__tab contacts__tab--hidden" data-id="2">
+                                <div class="contacts__info">
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Адрес</div>
+                                        <div class="contacts__item-val">Московская область, г. Электроугли, ул. Центральная, 116</div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Время работы</div>
+                                        <div class="contacts__item-val">
+                                            пн-пт: с 9:00 до 18:00 <br>
+                                            сб-вс: выходной
+                                        </div>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Телефон склада</div>
+                                        <a href="tel:+79260256464" class="contacts__item-val">
+                                            +7 (926) 025-64-64
+                                        </a>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <div class="contacts__item-title">Телефон офиса</div>
+                                        <a href="mailto:bav@argo.studio" class="contacts__item-val">
+                                            bav@argo.studio
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contacts__map">
+                                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A22df18a7c92e3a5af0354067e9bea8e6f330c3d30e082cc9126f47f24cb330b6&amp;source=constructor"  frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="catalog-form">
+                    <div class="container">
+                        <div class="catalog-form__container">
+                            <div class="catalog-form__text">
+                                <div class="catalog-form__title">
+                                    Заказать проект или проконсультироваться
+                                </div>
+                                <div class="catalog-form__desc">
+                                    Наши специалисты помогут вам определиться с необходимыми шагами
+                                </div>
+                            </div>
+                            <form class="catalog-form__group">
+                                <div class="catalog-form__groups">
+                                    <div class="catalog-form__group-item">
+                                        <span
+                                            class="catalog-form__group-item-title"
+                                        >
+                                            Имя <span>*</span>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="catalog-form__group-item-field"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="catalog-form__group-item">
+                                        <span
+                                            class="catalog-form__group-item-title"
+                                        >
+                                            Телефон <span>*</span>
+                                        </span>
+                                        <input
+                                            type="text"
+                                            class="catalog-form__group-item-field input-tel"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="catalog-form__group-item">
+                                    <span
+                                        class="catalog-form__group-item-title"
+                                    >
+                                        Почта
+                                    </span>
+                                    <input
+                                        type="email"
+                                        class="catalog-form__group-item-field"
+                                    />
+                                </div>
+
+                                <div class="catalog-form__group-item">
+                                    <span
+                                        class="catalog-form__group-item-title"
+                                    >
+                                        Комментарий
+                                    </span>
+                                    <textarea></textarea>
+                                </div>
+
+                                <div class="catalog-form__files">
+                                    <input
+                                        type="file"
+                                        class="catalog-form__file-input"
+                                    />
+                                    <a
+                                        href="#"
+                                        class="catalog-form__file-button"
+                                    >
+                                        <svg
+                                            width="12"
+                                            height="13"
+                                            viewBox="0 0 12 13"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g clip-path="url(#clip0_1531_12)">
+                                                <path
+                                                    d="M1.5 1H7.707L10.5 3.793V6.5H9.5V5H6.5V2H2.5V11H6V12H1.5V1ZM7.5 2.207V4H9.293L7.5 2.207ZM10 7.5V9.5H12V10.5H10V12.5H9V10.5H7V9.5H9V7.5H10Z"
+                                                    fill="#E6ECEF"
+                                                />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1531_12">
+                                                    <rect
+                                                        width="12"
+                                                        height="12"
+                                                        fill="white"
+                                                        transform="translate(0 0.5)"
+                                                    />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        Прикрепить файл
+                                    </a>
+                                    <div class="catalog-form__files-select">
+                                        <span></span>
+                                        <a
+                                            href="#"
+                                            class="catalog-form__files-change-btn change-file"
+                                        >
+                                            Заменить
+                                        </a>
+                                        <a
+                                            href="#"
+                                            class="catalog-form__files-change-btn remove-file"
+                                        >
+                                            Удалить
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="catalog-form__controls">
+                                    <div class="catalog-form__check">
+                                        <label class="custom-checkbox">
+                                            <input
+                                                type="checkbox"
+                                                checked=""
+                                                class="custom-checkbox__field"
+                                            />
+                                            <span
+                                                class="custom-checkbox__checkmark"
+                                            ></span>
+                                            <span class="custom-checkbox__text">
+                                                Я даю согласие на
+                                                <a href="#" target="_blank">
+                                                    обработку персональных
+                                                    данных</a
+                                                >
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                    <input
+                                        type="submit"
+                                        value="Отправить заявку"
+                                        class="catalog-form__submit btn"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__main">
+                    <div class="footer__main-group">
+                        <img
+                            src="./assets/img/logo-footer.svg"
+                            alt=""
+                            class="footer__logo"
+                        />
+                        <div class="footer__main-desc">
+                            Ритейл-студия по производству и монтажу оборудования
+                            для магазинов в формате «под ключ»
+                        </div>
+                    </div>
+                    <div class="footer__main-group footer__main-group--2">
+                        <div class="footer__main-copyright">
+                            © 2015–2023, ARGO. Все права защищены.
+                        </div>
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="footer__main-politic"
+                        >
+                            Политика конфиденциальности
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__nav">
+                    <div class="footer__nav-group">
+                        <div class="footer__nav-group-title">О компании</div>
+                        <a href="#" class="footer__nav-group-item">Проекты</a>
+                        <a href="#" class="footer__nav-group-item">Новости</a>
+                        <a href="#" class="footer__nav-group-item">Контакты</a>
+                        <a href="#" class="footer__nav-group-item"
+                            >Документация</a
+                        >
+                    </div>
+                    <div class="footer__nav-group">
+                        <div class="footer__nav-group-title">Услуги</div>
+                        <a href="#" class="footer__nav-group-item">
+                            Проектирование и дизайн
+                        </a>
+                        <a href="#" class="footer__nav-group-item"
+                            >Производство мебели</a
+                        >
+                        <a href="#" class="footer__nav-group-item"
+                            >По направлениям</a
+                        >
+                    </div>
+                    <div class="footer__nav-group">
+                        <div class="footer__nav-group-title">
+                            Холодильное оборудование
+                        </div>
+                        <a href="#" class="footer__nav-group-item">Чиллеры</a>
+                        <a href="#" class="footer__nav-group-item"
+                            >Дилер Hitline</a
+                        >
+                        <a href="#" class="footer__nav-group-item"
+                            >Оборудование Hitline</a
+                        >
+                        <a href="#" class="footer__nav-group-item">
+                            Проекты холодильного оборудования
+                        </a>
+                    </div>
+                    <div class="footer__nav-group">
+                        <div class="footer__nav-group-title">
+                            Как с нами связаться
+                        </div>
+                        <div class="footer__nav-group-item">
+                            г. Москва, Щёлковское шоссе 100, к.5, офис 706
+                        </div>
+                        <div class="footer__nav-group-item">
+                            Пн-пт: с 9:00 до 18:00
+                        </div>
+                        <a
+                            href="tel:+74953748472"
+                            class="footer__nav-group-item"
+                        >
+                            +7 495 374-84-72
+                        </a>
+                        <a
+                            href="mailto:bav@argo.studio"
+                            class="footer__nav-group-item"
+                        >
+                            bav@argo.studio
+                        </a>
+                        <div class="socials">
+                            <a href="#" target="_blank" class="socials__item">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_183_1484)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16 32C24.8365 32 32 24.8365 32 16C32 7.16344 24.8365 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8365 7.16344 32 16 32ZM8.48715 9.59608C9.99327 9.19996 15.994 9.19996 15.994 9.19996C15.994 9.19996 22.0068 9.19997 23.5128 9.62009C24.3311 9.83616 24.9833 10.4963 25.1968 11.3245C25.6119 12.849 25.6 16.018 25.6 16.018C25.6 16.018 25.6 19.1749 25.1968 20.6875C24.9833 21.5276 24.3311 22.1757 23.5128 22.4039C22.0068 22.8 15.994 22.8 15.994 22.8C15.994 22.8 10.0051 22.8 8.48715 22.3919C7.66885 22.1637 7.01669 21.5036 6.79136 20.6755C6.40001 19.1749 6.4 16.006 6.4 16.006C6.4 16.006 6.40001 12.849 6.79136 11.3245C7.01669 10.4963 7.68072 9.82415 8.48715 9.59608ZM19.0775 16.006L14.0847 13.0891V18.9108L19.0775 16.006Z"
+                                            fill="#043F5C"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_183_1484">
+                                            <rect
+                                                width="32"
+                                                height="32"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="socials__item">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_183_1486)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16 32C24.8365 32 32 24.8365 32 16C32 7.16344 24.8365 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8365 7.16344 32 16 32ZM16.9415 22.3531H15.7939C15.7939 22.3531 13.2616 22.5089 11.0317 20.1351C8.59977 17.5457 6.45199 12.4077 6.45199 12.4077C6.45199 12.4077 6.32819 12.0709 6.46268 11.908C6.61385 11.7249 7.02569 11.7132 7.02569 11.7132L9.76907 11.6948C9.76907 11.6948 10.0276 11.739 10.2127 11.8779C10.3652 11.9925 10.4507 12.2068 10.4507 12.2068C10.4507 12.2068 10.894 13.3533 11.4813 14.3907C12.6274 16.4157 13.1612 16.8587 13.5504 16.6417C14.1173 16.3253 13.9473 13.7791 13.9473 13.7791C13.9473 13.7791 13.9577 12.8547 13.6619 12.4432C13.4328 12.1242 13.0006 12.0311 12.8098 12.005C12.6555 11.984 12.9089 11.6175 13.2373 11.4531C13.7309 11.2057 14.6029 11.1916 15.6329 11.2025C16.4356 11.2108 16.6665 11.2619 16.9803 11.3395C17.7084 11.5193 17.6857 12.0953 17.6367 13.3381C17.6221 13.7095 17.6051 14.1404 17.6051 14.638C17.6051 14.75 17.6019 14.8693 17.5987 14.9921C17.5816 15.6287 17.5621 16.3573 17.9719 16.6281C18.1819 16.7668 18.6959 16.6489 19.9815 14.4168C20.5909 13.3589 21.0477 12.1151 21.0477 12.1151C21.0477 12.1151 21.1476 11.8933 21.3027 11.7982C21.4615 11.7012 21.6755 11.731 21.6755 11.731L24.5624 11.7126C24.5624 11.7126 25.4299 11.6068 25.5704 12.0071C25.7176 12.4275 25.2461 13.4088 24.0667 15.0163C22.9452 16.5445 22.4011 17.1052 22.4537 17.6025C22.492 17.9641 22.8457 18.2924 23.5224 18.9347C24.9435 20.2835 25.3223 20.9916 25.4123 21.16C25.4196 21.1736 25.4249 21.1836 25.4288 21.1903C26.0648 22.2685 24.7235 22.3531 24.7235 22.3531L22.1595 22.3896C22.1595 22.3896 21.6084 22.5012 20.8833 21.992C20.5041 21.7259 20.1333 21.2912 19.7801 20.8771C19.2401 20.2441 18.7411 19.6591 18.3151 19.7971C17.6004 20.0289 17.6228 21.6036 17.6228 21.6036C17.6228 21.6036 17.628 21.94 17.4651 22.1191C17.2881 22.3141 16.9415 22.3531 16.9415 22.3531Z"
+                                            fill="#043F5C"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_183_1486">
+                                            <rect
+                                                width="32"
+                                                height="32"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="socials__item">
+                                <svg
+                                    width="32"
+                                    height="32"
+                                    viewBox="0 0 32 32"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_183_1488)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M16 32C24.8365 32 32 24.8365 32 16C32 7.16344 24.8365 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8365 7.16344 32 16 32ZM23.476 11.8539C24.204 11.7674 24.8981 11.5739 25.5433 11.2878C25.0611 12.0095 24.4509 12.6433 23.7471 13.1506C23.7541 13.3047 23.7576 13.4601 23.7576 13.616C23.7576 18.3727 20.1371 23.8571 13.5168 23.8571C11.4843 23.8571 9.592 23.2615 8 22.2399C8.28104 22.2733 8.56824 22.2903 8.85813 22.2903C10.5449 22.2903 12.0966 21.7151 13.3287 20.7496C11.7533 20.7203 10.4244 19.6796 9.96644 18.25C10.186 18.2919 10.4112 18.3141 10.6437 18.3141C10.9714 18.3141 11.29 18.2704 11.5917 18.1877C9.94551 17.8573 8.70433 16.4028 8.70433 14.6588C8.70433 14.6439 8.70433 14.6285 8.7046 14.6132C9.18964 14.8835 9.745 15.0453 10.3347 15.0639C9.36948 14.4187 8.73359 13.3165 8.73359 12.0681C8.73359 11.4086 8.91128 10.7899 9.22104 10.2584C10.9964 12.4366 13.6487 13.8695 16.6399 14.0195C16.5781 13.7559 16.5463 13.4813 16.5463 13.1992C16.5463 11.2118 18.158 9.59995 20.1455 9.59995C21.1813 9.59995 22.1167 10.0369 22.7733 10.7362C23.5928 10.5749 24.3633 10.2756 25.0588 9.863C24.7896 10.704 24.2192 11.4086 23.476 11.8539Z"
+                                            fill="#043F5C"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_183_1488">
+                                            <rect
+                                                width="32"
+                                                height="32"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__main-group footer__main-group--mob">
+                    <div class="footer__main-copyright">
+                        © 2015–2023, ARGO. Все права защищены.
+                    </div>
+                    <a href="#" target="_blank" class="footer__main-politic">
+                        Политика конфиденциальности
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div class="modal modal--thanks modal--hidden">
+            <a href="#" class="modal__close arcticmodal-close">
+                <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M5 5L12 12M19 19L12 12M12 12L19 5L5 19"
+                        stroke="#B5BABC"
+                        stroke-width="2"
+                    ></path>
+                </svg>
+            </a>
+            <div class="modal__thanks-title">
+                Ваша заявка успешно отправлена!
+            </div>
+            <div class="modal__thanks-desc">
+                В ближайшее время с вами свяжется наш специалист
+            </div>
+        </div>
+        <div class="mob-overlay"></div>
+        <script src="./assets/plagins/jquery/jquery-3.6.4.min.js"></script>
+        <script src="./assets/plagins/wow/wow.min.js"></script>
+        <script src="./assets/plagins/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/plagins/modal/jquery.arcticmodal-0.3.min.js"></script>
+        <script src="./assets/plagins/mask/jquery.mask.js"></script>
+        <script src="./assets/main.js"></script>
+        <script src="./assets/catalog.js"></script>
+    </body>
+</html>
