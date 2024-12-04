@@ -2904,5 +2904,17 @@
   .gray-container .product-table__inner .btn-arrow {
     width: 100%;
     font-size: 14px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.desc-p {
+  padding-bottom: 48px;
+}
+
+@media (max-width:767px) {
+  .desc-p {
+    padding-bottom: 32px;
   }
 }
