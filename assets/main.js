@@ -286,4 +286,35 @@ $(document).ready(function () {
             $(this).text("Читать далее");
         }
     });
+
+    //новые страницы
+    const productSlider = new Swiper(".stantions-product__swiper", {
+        loop: true,
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoHeight: true,
+        pagination: {
+            clickable: true,
+            el: ".stantions-product .slider-pagination__items",
+        },
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
+    });
+
+     // Плавная прокрутка с data-атрибутами
+  $('[data-scroll-to]').on('click', function(e) {
+    e.preventDefault();
+
+    var targetId = $(this).data('scroll-to');
+    var $targetElement = $('#' + targetId);
+
+    if ($targetElement.length > 0) {
+      // Плавная прокрутка с учетом отступа
+      $('html, body').animate({
+        scrollTop: $targetElement.offset().top - 100
+      }, 800);
+    }
+  });
 });

@@ -52,30 +52,70 @@ $(document).ready(function () {
     });
   });
 
-  const categorySlider = new Swiper(".category-projects__slider", {
-    spaceBetween: 16,
-    slidesPerView: 2,
-    pagination: {
-      clickable: true,
-      el: ".category-projects .swiper__pagination",
-    },
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+  // const categorySlider = new Swiper(".category-projects__slider", {
+  //   spaceBetween: 16,
+  //   slidesPerView: 2,
+  //   pagination: {
+  //     clickable: true,
+  //     el: ".category-projects .swiper__pagination",
+  //   },
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 3000,
+  //     disableOnInteraction: false,
+  //   },
 
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0,
+  //   breakpoints: {
+  //     320: {
+  //       slidesPerView: 1,
+  //       spaceBetween: 0,
+  //     },
+  //     // when window width is >= 990
+  //     990: {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //     },
+  //   },
+  // });
+
+  // Находим все слайдеры
+  $('.category-projects__slider').each(function(index) {
+    var $slider = $(this);
+    var $container = $slider.closest('.category-projects');
+
+    // Ищем пагинацию внутри родительского контейнера
+    var $pagination = $container.find('.swiper__pagination');
+
+    // Если пагинация не найдена, создаем её
+    if ($pagination.length === 0) {
+      $pagination = $('<div class="swiper__pagination swiper-pagination-' + index + '"></div>');
+      $container.append($pagination);
+    }
+
+    // Инициализируем слайдер
+    new Swiper($slider[0], {
+      spaceBetween: 16,
+      slidesPerView: 2,
+      pagination: {
+        clickable: true,
+        el: $pagination[0],
       },
-      // when window width is >= 990
-      990: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+      loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        990: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
       },
-    },
+      // Важно для работы нескольких слайдеров
+      observer: true,
+      observeParents: true,
+    });
+
   });
 
   $(".category-tags__show-more").on("click", function () {
