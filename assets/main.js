@@ -188,6 +188,15 @@ $(document).ready(function () {
         }
     }
 
+     if ($(window).width() < 630) {
+        if ($(".product-table__container").length) {
+            $(".product-table__container")
+                .scrollbar()
+                .parent()
+                .addClass("scrollbar-inner");
+        }
+    }
+
     //шаги
 
     $(".steps__link").on("click", function (e) {
@@ -315,6 +324,17 @@ $(document).ready(function () {
       $('html, body').animate({
         scrollTop: $targetElement.offset().top - 100
       }, 800);
+
+      $('.bottom-menu').removeClass('bottom-menu--opened');
     }
+  });
+
+  $('.bottom-menu__mob').on('click', function() {
+    $(this).closest('.bottom-menu').toggleClass('bottom-menu--opened');
+  });
+
+  $('.bottom-menu__close').on('click', function(e) {
+    e.preventDefault();
+    $(this).closest('.bottom-menu').removeClass('bottom-menu--opened');
   });
 });

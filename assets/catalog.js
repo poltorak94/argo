@@ -106,6 +106,11 @@ $(document).ready(function () {
           slidesPerView: 1,
           spaceBetween: 0,
         },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // when window width is >= 990
         990: {
           slidesPerView: 2,
           spaceBetween: 20,
