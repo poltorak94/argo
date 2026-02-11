@@ -138,6 +138,7 @@
 
 .category--brand {
   background: #fff;
+  overflow-x: hidden;
   .hero {
     height: 520px;
     margin-top: 32px;
@@ -592,6 +593,46 @@
   flex-wrap: wrap;
 }
 
+.modal-product {
+  max-width: 1100px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  &__info {
+    width: 50%;
+    padding: 40px 56px 40px 40px;
+  }
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__img-holder {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .s-product-table {
+    margin-bottom: 0;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .s-product-table__item:nth-child(odd) {
+    background: rgba(230, 236, 239, 0.64);
+  }
+  .s-product-table__item:nth-child(even) {
+    background: transparent;
+  }
+}
+
 @media (max-width: 1365px) {
   .stantions__brand-info img {
     max-width: 75%;
@@ -735,16 +776,29 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .product-steps--wrap{
+  .product-steps--wrap {
     gap: 40px;
   }
 
-  .product-table__container{
+  .product-table__container {
     overflow: auto;
-    padding: 0!important;
+    padding: 0 !important;
   }
-  .s-product-table--max{
+  .s-product-table--max {
     min-width: 630px;
+  }
+
+  .modal-product {
+    flex-direction: column-reverse;
+    &__info {
+      width: 100%;
+      padding: 0 40px 40px;
+    }
+    &__img-holder {
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 20px;
+    }
   }
 }
 
@@ -891,6 +945,23 @@
 
   .stantions-models--md .stantions-models__items {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .modal-product__img-holder {
+    padding: 24px 15px;
+    margin-bottom: 16px;
+  }
+  .modal-product__title {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .modal-product__info {
+    padding: 0 16px 16px;
+  }
+  .modal-product .s-product-table {
+    margin-top: 12px;
+  }
+  .modal-product .s-product-table__item {
+    font-size: 14px;
   }
 }
 

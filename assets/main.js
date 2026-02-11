@@ -168,6 +168,16 @@ $(document).ready(function () {
         });
     });
 
+    $('.btn-modal-product').on('click', function(e) {
+        e.preventDefault();
+        $('.modal-product').removeClass('modal--hidden');
+        $('.modal-product').arcticmodal({
+            afterClose: function(data, el) {
+                $('.modal-product').addClass('modal--hidden');
+            }
+        });
+    });
+
     //Маска телефон
     $(".input-tel").mask("+7 (999) 999-99-99");
 
